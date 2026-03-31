@@ -1,0 +1,41 @@
+<!--Tarea formulario: Crear un formulario de registro
+    para un sitio web para renovar una hora al doctor
+    Debe incluir: Nombre del paciente, fecha de cita,
+    Fecha_nacimiento, Sintomas del paciente, Ciudad (lista_desplegable),
+    Casilla de verificación-->
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta chartset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <form action="/registro" method="post">
+        <div>
+            <label for="nombre_completo">Nombre del paciente:</label>
+            <input type="text" id="nombre_completo" name="nombre_completo" placeholder="Ingresa tu nombre">
+        </div>
+
+        <div>
+            <label for="correo">Correo electrónico:</label>
+            <input type="text" id="correo" name="correo" placeholder="Ingresa tu correo">
+        </div>
+
+        <div>
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" placeholder="Ingresa tu contraseña" />
+        </div>
+
+        <div>
+            <input type="checkbox" id="suscribirse" name="suscribirse" checked>
+            <label for="suscribirse">Deseo suscribirme al boletín informativo.</label>
+        </div>
+
+        <div>
+            <input type="submit" value="Registrarse">
+        </div>
+    </form>
+</body>
+
+</html>
