@@ -8,7 +8,7 @@
 <head>
     <meta chartset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de registro</title>
+    <h1>Formulario de registro para renovación</h1>
 </head>
 <body>
     <form action="/registro" method="post">
@@ -35,15 +35,27 @@
                 Gripe<br>
                 <input type="checkbox" name="sintomas" value="fiebre">
                 Fiebre
-        
+        </div>
         <div>
+            <label for="ciudad">Ciudad:</label>
+            <select id="ciudad" name="ciudad">
+                <option value="santiago">Santiago</option>
+                <option value="concepcion">Concepción</option>
+                <option value="iquique">Iquique</option>
+                <option value="valparaiso">Valparaíso</option>
+            </select>
+        </div>
+
+        <div>
+            <p><em>Para más información:</em></p>
             <input type="checkbox" id="suscribirse" name="suscribirse" checked>
             <label for="suscribirse">Deseo suscribirme al boletín informativo.</label>
         </div>
 
         <div>
-            <input type="submit" value="Registrarse">
+            <input type="submit" value="Registrarse para renovar una hora">
         </div>
+        
     </form>
 </body>
 
