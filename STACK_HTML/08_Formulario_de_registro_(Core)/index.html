@@ -3,43 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <h1>Crear una cuenta de Discord</h1>
+    <title>>Crear una cuenta de Discord</title>
 </head>
 <body>
+    <h1>Crear una cuenta de Discord</h1>
     <form action="#" method="POST">
         <div>
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre">
+            <input type="text" id="nombre" name="nombre" required>
         </div>
         <br>
         <div>
             <label for="lastname">Apellido:</label>
-            <input type="text" id="lastname" name="lastname">
+            <input type="text" id="lastname" name="lastname" required>
         </div>
         <br>
         <div>
             <label for="correo">Correo electrónico:</label>
-            <input type="text" id="correo" name="correo">
+            <input type="text" id="correo" name="correo" required>
         </div>
         <br>
         <div>
             <label for="clave">Contraseña:</label>
-            <input type="password" id="clave" name="clave">
+            <input type="password" id="clave" name="clave" required>
         </div>
         <br>
         <div>
             <label for="clave_confirm">Confirmar contraseña:</label>
-            <input type="password" id="clave_confirm" name="clave_confirm">
+            <input type="password" id="clave_confirm" name="clave_confirm" required>
         </div>
         <br>
         <div>
             <label for="fecha_nacimiento">Fecha de nacimiento:</label>
-            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
         </div>
         <br>
         <div>
             <label>Género:</label>
-            <input type="radio" name="genero" value="masculino"> <!--Elemento de selección única-->
+            <input type="radio" name="genero" value="masculino" required> <!--Elemento de selección única-->
             Masculino
             <input type="radio" name="genero" value="femenino">
             Femenino
@@ -49,11 +50,11 @@
         <br>
         <div>
             <label for="comentario">Descripción sobre ti:</label><br>
-            <textarea id="comentario" name="comentario" rows="4" cols="30"></textarea>
+            <textarea id="comentario" name="comentario" rows="4" cols="30" required></textarea>
         </div>
         <div>
         <p>Selecciona tus intereses:</p>
-        <select name="intereses" multiple size="5" style="width: fit-content; overflow-y: scroll; border-radius: 4px;">
+        <select name="intereses" multiple size="5" required style="width: fit-content; overflow-y: scroll; border-radius: 4px;">
             <option value="musica">Música</option>
             <option value="peliculas">Películas</option>
             <option value="deportes">Deportes</option>
@@ -62,7 +63,7 @@
         </div>
         <br>
         <div>
-            <input type="checkbox" id="acepto" name="acepto">
+            <input type="checkbox" id="acepto" name="acepto" required>
             <label for="acepto">Al registrarte, aceptas los <a href="https://discord.com/terms" target="_blank">Términos y condiciones</a>  de Discord</label>
         </div>
         <br>
