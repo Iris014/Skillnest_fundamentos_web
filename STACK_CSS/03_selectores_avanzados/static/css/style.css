@@ -1,0 +1,84 @@
+* {
+    /*outline: 2px dashed crimson;*/
+
+    /*Selector comun (selecciona todos los elementos html)*/
+    /*outline: 1px solid crimson; */
+    /* Linea externa de 2px*/
+    margin: 0;
+    /* Formatea espacios externos de elementos html */
+    padding: 0;
+    /* Formatea espacios internos de elementos html */
+    box-sizing: border-box;
+    /* Considera bordes dentro de tamaño de elementos html */
+
+}
+
+body {
+    padding: 40px;
+}
+
+h1 {
+    color: rebeccapurple;
+}
+
+.green {
+    color: mediumseagreen;
+}
+
+#red {
+    color: tomato;
+}
+
+.quote p {
+    color: darkslategray;
+    font-style: italic;
+}
+
+.quote h4 {
+    color: rgb(120, 213, 213);
+    font-weight: bolder;
+    /* Negrita */
+}
+
+.header>img {
+    /* solo afecta a los elementos hijos directos (>)*/
+    height: 50px;
+    /* Altura de la imagen */
+}
+
+#container p { /* Seleccion de parrafo dentro de Contenedor (#) */
+    font-size: 16px; /* Tamaño de letra */
+    background-color: #444; /* Color de fondo */
+    color: white; /* Color de letra */
+}
+
+#container p.highlight {
+    font-weight: bold;
+    color: gold;
+}
+input[type="text"] {
+    border: 2px solid royalblue;
+    padding: 3px;
+}
+form{
+    padding: 20px;
+}
+input[type="submit"] {
+    color: white;
+    background-color: mediumvioletred;
+    border: none; /* Quita los bordes por defecto */
+    padding: 5px 10px;
+    cursor: pointer; /* Manito para realizar click */
+}
+.color_nombre{
+    color:green;
+    background-color:rgb(215, 255, 215);
+}
+.color_rgb{
+    color:rgb(0, 185, 185);
+    background-color:hsl(180, 100%, 88%);
+}
+.color_hex{
+    color: #c3e731;
+    background-color:#f9ffe0;
+}
