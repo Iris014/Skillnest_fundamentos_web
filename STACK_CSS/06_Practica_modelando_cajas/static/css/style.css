@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.encabezado {
+    padding: 40px;
+}
+
+.titulo {
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+p {
+    text-align: center;
+}
+
+.caja {
+    display: inline-block;
+    /* Elementos en bloque */
+    width: 300px;
+    padding: 75px 30px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+/* Estilo base para todas las cajas */
+.caja {
+    width: 280px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: white;
+}
+
+/* El encabezado de color */
+.titulo {
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* El área de texto debajo del color */
+.info {
+    padding: 20px;
+}
+
+.info p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.info a {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+}
+
+.azul {
+    background-color: #5DADE2;
+}
+
+.rojo {
+    background-color: #EC7063;
+}
+
+.verde {
+    background-color: #52BE80;
+}
+
+.amarillo {
+    background-color: #F4D03F;
+}
+
+.morado {
+    background-color: #A569BD;
+}
+
+.turquesa {
+    background-color: #48C9B0;
+}
