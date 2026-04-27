@@ -9,47 +9,23 @@
     text-align: center;
 }
 
-.encabezado {
+.header {
     padding: 40px;
-}
-
-.titulo {
     margin-bottom: 20px;
     font-weight: bold;
-}
-
-.container {
-    width: 1200px;
-    margin: 0 auto;
 }
 
 p {
     text-align: center;
 }
 
-.caja {
-    display: inline-block;
-    width: 150px;
-    padding: 55px 10px;
-    font-weight: bold;
-    color: white;
-    border-radius: 10px;
-    text-align: center;
-    margin: 10px;
-    box-sizing: border-box;
-}
-
-
 .contenedor {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
-    font-family: sans-serif;
     padding: 20px;
 }
 
-/* Estilo base para todas las cajas */
 .caja {
     width: 280px;
     border-radius: 12px;
@@ -59,21 +35,58 @@ p {
     background-color: white;
 }
 
-/* El área de texto debajo del color */
+a {
+    color:#256FB0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.caja {
+    display: inline-block;
+    width: 300px;
+    padding: 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+/*
+    width: 100%;
+    padding: 30px 10px; /* Ajustado para que se vea como la imagen
+    font-weight: bold;
+    color: white;
+    text-align: center;
+*/
+.centrado a {
+    font-weight: bold;
+}
+
+.encabezado a {
+    font-weight: normal;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .info {
-    padding: 10px;
+    background-color: white;
+    color: #444;
+    font-weight: normal;
+    padding: 25px; /* Padding uniforme */
+    margin: 25px;
 }
 
 .info p {
     color: #555;
-    margin-bottom: 5px;
+    margin: 10px;
 }
 
-.info a {
-    text-decoration: none;
-    color: #0066cc;
-    font-weight: bold;
-}
 
 .azul {
     background-color: #5DADE2;
