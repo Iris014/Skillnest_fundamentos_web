@@ -95,12 +95,28 @@ div {
     overflow: auto;
 }
 
-/*
-🎨 Fondo y colores
-*/
+/* 🎨 Fondo y colores */
 .banner {
     height: 330px;
     width: 100%;
-    background: red url("/STACK_CSS/06_tamanos/static/images/banner.png") no-repeat fixed center center; /* Horizontal center, vertical center*/
-    background-size: 100%;
+    background: red url("/STACK_CSS/07_tamanos/static/images/banner.png") no-repeat center center; /* Horizontal center, vertical center*/
+    background-size: 113%;
+}
+
+/* 🟫 Bordes y estilos */
+.button {
+    border: 2px dotted green;
+}
+
+.div {
+    border: 1px solid black;
+}
+
+/* 🟢 Bordes redondeados */
+.button {
+    border-radius: 5px;
+}
+
+.div {
+    border-radius: 50%;
 }
