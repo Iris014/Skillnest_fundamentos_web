@@ -25,6 +25,10 @@
     padding: 20px;
 }
 
+.row {
+    padding: 10px;
+}
+
 /* Tamaños ejemplos CSS*/
 .aceptar {
     width: 100px;
@@ -104,19 +108,66 @@ div {
 }
 
 /* 🟫 Bordes y estilos */
-.button {
-    border: 2px dotted green;
+.cancelar {
+    border: 2px dotted red; /* dotted: línea segmentada ....... */
+    padding: 15px;
+    cursor: pointer;
 }
 
-.div {
-    border: 1px solid black;
+.articulo {
+    border: 1px solid rgb(206, 175, 175); /* solid: línea sólida */
+    height: 50px;
+    width: 100px;
 }
 
 /* 🟢 Bordes redondeados */
-.button {
-    border-radius: 5px;
+.boton_redondeado {
+    padding: 10px 20px;
+    border-radius: 15px; /* redondea esquinas */
 }
 
-.div {
-    border-radius: 50%;
+.caja_redondeada {
+    width: 40px;
+    height: 40px;
+    padding: 10px 16px;
+    background-color: blue;
+    font-weight: bold;
+    color: white;
+    border-radius: 50%; /* 50% de radius: Círculo perfecto */
+}
+
+.cajitas {
+    width: 100px;
+    height: 40px;
+    outline: solid 1px purple;
+}
+
+.box1 {
+    background-color: rgb(204, 227, 227);
+    padding: 10px; /* Padding aplicado en todos los lados */
+}
+
+.box2 {
+    background-color: rgb(207, 207, 124);
+    padding-top: 0px; /* Espacio interno: arriba */
+    padding-right: 5px; /* Espacio interno: derecha */
+    padding-bottom: 0px; /* Espacio interno: abajo */
+    padding-left: 5px; /* Espacio interno: izquierda */
+    /* padding: 0px 5px 0px 5px  --> */
+}
+
+.box3 {
+    background-color: rgba(127, 255, 133, 0.818);
+    margin: 0px 20px; /* Margen externo: Separa elementos */
+}
+
+.box4 {
+    background-color: palevioletred;
+    margin: 0px 20px; /* eje X modificado con margin */
+    padding: 5px 0px; /* eje Y modificado con padding */
+}
+
+.box5 {
+    float: left;
+    width: 50%;
 }
