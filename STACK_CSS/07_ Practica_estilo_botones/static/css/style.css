@@ -1,0 +1,49 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.titulo {
+    color: black gray;
+    text-align: center;
+    font-family: 'roboto';
+
+}
+.container {
+    margin: 0 auto;
+    text-align: center;
+}
+.buscar {
+    margin: auto;
+    width: 120px;
+    height: 50px;
+    padding: 15px 20px;
+    border-radius: 20px;
+    display: block;
+    background-color: #D3D3D3;
+    margin-bottom: 10px;
+}
+
+.signo {
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    padding: 20px 26px;
+    background-color: #F8A504;
+    border-radius: 100%;
+    border: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.crear {
+    margin: auto;
+    width: 140px;
+    height: 60px;
+    background-color: #3590FF;
+    color: white;
+    border: none;
+    box-shadow: 1px 2px 4px;
+    display: block;
+    margin-bottom: 10px;
+}
