@@ -36,7 +36,7 @@ header {
     background-color: white;
     border-radius: 12px;
     overflow: hidden; /* Surgieron reiterados problemas en el diseño durante su proceso, por eso se uso overflow al conocer su uso. */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px;
     margin: 15px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
