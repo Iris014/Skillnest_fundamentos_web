@@ -3,48 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo mini-sitio inline-bloc</title>
+    <title>Diseño de una página web (Core)</title>
     <!-- link css -->
     <link rel="stylesheet" href="static/css/style.css">
     <meta name="author" content="Iris Ccallomamani">
 </head>
 <body>
-    <!-- HEADER -->
     <header class="header">
-    <h1>Mi sitio Web</h1>
+    <h1>Skillnest</h1>
+        <p>Impulsando la formación y el desarrollo de habilidades en tecnología</p>
+        
         <nav class="menu">
             <a href="#" class="boton">Inicio</a>
-            <a href="#" class="boton">Servicios</a>
+            <a href="#" class="boton">Testimonios</a>
+            <a href="#" class="boton">Quiénes somos</a>
             <a href="#" class="boton">Contacto</a>
         </nav>
     </header>
-    <main class="contenedor_principal">
-        <!-- Texto con elementos inline -->
+    <main class="contenedor">
         <section>
-            <h2>Texto con elementos inline</h2>
-            <p>
-                Este es un ejemplo en donde usamos <span class="resaltado">inline</span>
-                para recalcar texto sin romper la línea de párrafo.
-            </p>
+            <div class="bloque">
+                <h2>Impulsamos la tecnología del mañana</h2>
+                <p>En Skillnest desarrollamos programas ideales para la formación de todos los sectores.</p>
+            </div>
         </section>
-        <!-- Tarjetas (inline-block) -->
-        <section class="contenedor_tarjetas">
-            <h2>Tarjetas (inline-block)</h2>
-            <div class="box">Tarjeta 1</div>
-            <div class="box">Tarjeta 2</div>
-            <div class="box">Tarjeta 3</div>
-        </section>
-        <!-- Bloques (Block) -->
-        <section>
-            <h2>Bloques (block)</h2>
-            <div class="bloque">Bloque 1</div>
-            <div class="bloque">Bloque 2</div>
-            <div class="bloque">Bloque 3</div>
+        <section class="tarjetas">
+            <div class="box">
+                <strong class="negrita">Skillnest Academy</strong>
+                <p>Bootcamps para transformar tu futuro</p>
+            </div>
+            <div class="box">
+                <strong>Skillnest Edu</strong>
+                <p>Educación en programación para instituciones.</p>
+            </div>
+            <div class="box">
+                <strong>Skillnest Gov</strong>
+                <p>Capacitación digital junto a gobiernos.</p>
+            </div>
         </section>
     </main>
-    <!-- Footer -->
     <footer class="footer">
-        <p>2026 - Todos los derechos reservados</p>
     </footer>
 </body>
 </html>
