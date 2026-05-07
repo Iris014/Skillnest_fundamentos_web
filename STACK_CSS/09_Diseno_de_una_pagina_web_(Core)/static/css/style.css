@@ -8,7 +8,7 @@
 .header {
     background-color: #1E3A5E;
     color: white;
-    height: 100px;
+    height: 110px;
     padding: 40px 45px;
     padding-top: 30px;
     padding-bottom: 50px;
@@ -21,7 +21,7 @@ h1 {
 
 .header p {
     font-size: 11px;
-    margin-top: 15px;
+    margin-top: 18px;
 }
 
 .menu {
@@ -29,7 +29,7 @@ h1 {
     text-align: center; 
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-top: 15px;
+    margin-top: 0px;
 }
 
 .boton {
@@ -43,9 +43,9 @@ h1 {
 .contenedor{
     padding: 20px;
     margin: 35px auto;
-    margin-top: 20px;
+    margin-top: 32px;
     width: 1000px;
-    box-shadow: 0 0 12px gray;
+    box-shadow: 0 0 11px gainsboro;
     text-align: center;
 }
 
@@ -62,6 +62,9 @@ h1 {
     margin-bottom: 20px;
     margin-left: 100px;
     border-radius: 10px;
+    font-size: 12px;
+}
+.bloque p {
     font-size: 12px;
 }
 
