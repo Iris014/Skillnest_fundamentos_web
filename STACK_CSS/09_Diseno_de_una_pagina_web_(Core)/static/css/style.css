@@ -37,14 +37,15 @@ h1 {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
-    font-size: 11px;
+    font-size: 11.5px;
 }
 
 .contenedor{
     padding: 20px;
     margin: 35px auto;
     margin-top: 32px;
-    width: 1000px;
+    width: 1100px;
+    height: 257px;
     box-shadow: 0 0 11px gainsboro;
     text-align: center;
 }
@@ -58,45 +59,47 @@ h1 {
     background-color: #204875;
     color: white;
     padding: 20px;
-    width: 750px;
+    width: 1050px;
+    height: 100px;
     margin-bottom: 20px;
-    margin-left: 100px;
+    margin-left: 5px;
     border-radius: 10px;
-    font-size: 12px;
+    font-size: 11.5px;
 }
+
+h2 {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
 .bloque p {
-    font-size: 12px;
+    font-size: 11.5px;
+    margin-top: 15.5px;
 }
 
 .box{
     display: inline-block;
-    width: 300px;
-    height: 100px;
+    width: 280px;
+    height: 90px;
     background-color: #00AEE5;
     color: white;
     margin: 5px;
-    padding: 10px;
-    padding-top: 35px;
+    padding: 18px 10px;
     border-radius: 10px;
 }
 
 .box p {
-    margin-top: 12px;
-}
-
-/*
-    margin-left: 20px;
-    margin-right: 20px; 
-*/
-h2 {
-    font-size: 14px;
+    font-size: 11.5px;
+    margin-top: 15px;
 }
 
 p {
-    font-size: 10px;
+    font-size: 11.5px;
     margin-top: 8px;
 }
 
 .negrita {
-    font-size: 11px;
+    margin-top: 10px;
+    font-size: 13.5px;
 }
+
