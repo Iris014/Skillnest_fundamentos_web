@@ -1,69 +1,112 @@
-.container {
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FDF6EC;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-family: arial, sans-serif;
+}
+
+.header{
+    background-color: #34495E;
+    padding: 30px;
+}
+.header p {
+    color: white;
+    text-align: center;
+    font-size: 11.5px;
+    margin-top: 18px;
+    font-family: arial, sans-serif;
+}
+
+.menu {
+    background-color: #34495E;
+    text-align: center; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.contenedor{
     display: flex;
-    /* Activa flexbox en este contenedor */
-    justify-content: center;
-    /* Alinear horizontalmente*/
-    background-color: #f0f0f0;
     padding: 20px;
+    box-shadow: 0 0 11px gainsboro;
     flex-wrap: wrap;
-    /* Baja elementos que no caben pantalla */
-}
+    margin-top: 20px;}
 
-.item {
-    background-color: #00ade5;
-    color: #fff;
-    margin: 20px;
-    padding: 20px;
-}
-
-.row {
-    flex-direction: row;
-    /* Dirección en filas */
-}
-
-.column {
-    flex-direction: column;
-    /* Dirección en columnas */
-}
-
-.start {
-    justify-content: flex-start;
-    /* Alinear a la izquierda */
-}
-
-.center {
-    justify-content: center;
-    /* Centrar elementos */
-}
-
-.space-between {
-    justify-content: space-between;
-    /* Distribución de elementos perfectos */
-}
-
-/* EJEMPLO SKILLNEST */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    padding: 20px;
-}
-
-.contenedor {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-
-    /* Propiedades flexbox */
+.bloque{
     display: flex;
-    justify-content: center;
+    background-color: #E67E22;
+    color: white;
+    padding: 15px;
+    width: 1050px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 5px;
+    border-radius: 10px;
+    font-size: 11.5px;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
 }
 
-.elemento {
-    margin: 10px;
-    background-color: #00ade5;
-    color: #ffffff;
+h2 {
+    font-size: 14px;
+    margin-top: 10px;
+    font-family: arial, sans-serif;
+}
+
+.bloque p {
+    font-size: 11.5px;
+    margin-top: 15.5px;
+    font-family: arial, sans-serif;
+}
+
+.tarjetas {
+    text-align: center;
+}
+
+.box{
+    display: flex;
+    height: 100px;
+    width: 280px;
+    background-color: #D35400;
+    color: white;
     padding: 20px;
     border-radius: 10px;
+    margin: 15px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box p {
+    font-size: 11.5px;
+    margin-top: 15px;
+    font-family: arial, sans-serif;
+}
+
+p {
+    font-size: 11.5px;
+    margin-top: 8px;
+    font-family: arial, sans-serif;
+}
+
+.negrita {
+    margin-top: 10px;
+    font-size: 13.5px;
+    font-family: arial, sans-serif;
+}
+
+.sin-formato{
+    font-size: 11.5px;
+    margin-top: 8px;
 }
