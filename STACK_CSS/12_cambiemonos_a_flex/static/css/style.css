@@ -8,21 +8,20 @@ body{
     background-color: #FDF6EC;
 }
 
+.header{
+    background-color: #34495E;
+    padding: 30px;
+    text-align: center;
+}
+
 h1 {
     color: white;
-    text-align: center;
     font-size: 24px;
     font-family: arial, sans-serif;
 }
 
-.header{
-    background-color: #34495E;
-    padding: 30px;
-}
-
 .header p {
     color: white;
-    text-align: center;
     font-size: 11.5px;
     margin-top: 18px;
     font-family: arial, sans-serif;
@@ -39,11 +38,12 @@ h1 {
 .contenedor {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: white; 
-    padding: 25px;
-    width: 1000px;
+    padding: 35px;
+    width: 800px;
     height: 800px;
-    margin: 15px auto;
+    margin: 35px auto;
     border-radius: 10px;
 }
 
@@ -55,8 +55,8 @@ h1 {
     width: 100%; 
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
     border-radius: 10px;
     flex-wrap: wrap;
     flex-direction: column;
@@ -81,7 +81,6 @@ h2 {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    background: white;
     padding: 10px;
     text-align: center;
 }
