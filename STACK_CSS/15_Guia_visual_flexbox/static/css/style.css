@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+header{
+    background-color: #1E293B;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+/* Diseño NAV */
+.nav{
+    display: flex;
+    justify-content: center; /* Centrar con flex */
+    gap: 20px; /* Separación de elementos con flex */
+    background-color: #334155;
+    padding: 15px;
+}
+
+.nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold; /* negrita */
+}
+
+.main{
+    padding: 30px;
+}
+
+.section{
+    background-color: white;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.199);
+}
+/* CONTENEDOR DE CAJAS */
+.contenedor{
+    background-color: rgba(255, 255, 255, 0.61);
+    height: 200px;
+    border: 3px dashed #94a3b8;
+    margin-top: 20px;
+}
+/* CAJAS A MANIPULAR */
+.caja{
+    width: 80px;
+    height: 80px;
+    background-color: steelblue;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    /* display flex */
+    display: flex; 
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+/* EJEMPLOS */
+/* 1.- justify-content + gap */
+.ejemplo1{
+    display: flex;
+    justify-content: center; /* Centrar contenido */
+    gap: 20px;
+}
+/* 2.- align-items + gap */
+.ejemplo2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+/* 3.- Flex direction + Gap */
+.ejemplo3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+/* 4.- Space between + Align items */
+.ejemplo4{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+/* 5. Centrado completo */
+.caja-grande{
+    display: flex;
+    width: 180px;
+    height: 100px;
+}
