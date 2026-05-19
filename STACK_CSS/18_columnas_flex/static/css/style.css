@@ -24,6 +24,11 @@ body {
     /* Ocupa una parte del espacio disponible */
     flex: 1;
 }
+.col:hover{
+    background-color: aqua;
+    transform: scale(1.2);
+    margin-left: 10px;
+}
 
 .col-2 {
     /* Ocupa el doble del espacio de la primera */
