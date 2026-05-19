@@ -1,0 +1,36 @@
+body {
+    /* Flexbox */
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+    background-color: #F4F4F9;
+}
+
+/* Contenedor de filas */
+.row {
+    color: white;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 19px;
+}
+
+
+.col {
+    color: black;
+    background-color: #87CEEB;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    /* Ocupa una parte del espacio disponible */
+    flex: 1;
+}
+
+.col-2 {
+    /* Ocupa el doble del espacio de la primera */
+    flex: 2;
+}
+
+.col-3 {
+    /* Ocupa el mismo espacio que la primera */
+    flex: 3;
+}
