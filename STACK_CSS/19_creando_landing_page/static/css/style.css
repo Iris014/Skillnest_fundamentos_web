@@ -21,7 +21,7 @@ header{
 }
 
 .titulo{
-    font-size: 1.5rem; /* Tamaño letra rem: es tamaño*/
+    font-size: 2rem; /* Tamaño letra rem: es tamaño*/
     font-weight: 700; /* Grosor de letra */
 }
 h1{
@@ -44,11 +44,22 @@ span{
     text-decoration: none;
 }
 
+.boton_azul{
+    color: white;
+    background-color: #216CEA;
+    padding: 12px 24px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer; /* Añade una mano cuando mouse  */
+    border-radius: 6px;
+    border: none;
+}
+
 .boton-principal{
     color: white;
     background-color: #216CEA;
     padding: 12px 24px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 600;
     cursor: pointer; /* Añade una mano cuando mouse  */
     border-radius: 6px;
@@ -61,7 +72,7 @@ button:hover{
 
 .seccion_principal{
     display: flex;
-    background-color: white;
+    background-color: #F4F7FE;
     align-items: center;
     justify-content: space-between;
     gap: 50px;
@@ -74,6 +85,14 @@ button:hover{
     flex-direction: column;
     gap: 15px;
     flex: 1; /*  50% 1/2 */
+    width: 350px;
+}
+
+.inicio{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 450px
 }
 
 .contenedor_imagen{
@@ -84,8 +103,8 @@ button:hover{
     align-items: center;
 }
 .contenedor_imagen img{
-    width: 600px;
-    height: 500px;
+    width: 700px;
+    height: 600px;
 }
 
 .subtitulo_inicio{
@@ -93,22 +112,22 @@ button:hover{
     font-size: 4rem;
 }
 
-.boton-azul{
-    color: white;
-    background-color: #216CEA;
-    padding: 12px 24px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer; /* Añade una mano cuando mouse  */
-    border-radius: 6px;
-    border: none;
+.contenido_principal p{
+    color: #626A79;
+    font-size: 1.5rem;
+    margin-top: 25px;
 }
+
+.botones{
+    margin-top: 25px;
+}
+
 .enlace-mas{
     color: #216CEA;
     background-color: white;
     text-decoration: none;
     padding: 12px 24px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
@@ -144,6 +163,19 @@ button:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 250px;
+}
+
+.bloque p{
+    color: #626A79;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.atributo{
+    font-size: 2rem;
+    margin-top: 15px;
 }
 
 img {
@@ -151,12 +183,89 @@ img {
     height: 150px;
 }
 
+
+.seccion_comenzar{
+    background-color: #F4F7FE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 30px;
+    margin: 50px;
+}
+
 .contenedor_comenzar{
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.contenedor_comenzar p{
+    color: #626A79;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.comenzar{
+    color: white;
+    background-color: #216CEA;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    cursor: pointer; /* Añade una mano cuando mouse  */
+    border-radius: 6px;
+    border: none;
+    margin-top: 25px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer{
     display: flex;
     gap: 50px;
     margin-top: 50px;
+    width: 100%;
+}
+
+.seccion_info{
+    background-color: #F4F7FE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 40px 30px;
+    margin: 50px;
+    width: 100%;
+}
+.propiedad_marca{
+    font-size: 1.5rem;
+    color: #626A79;
+}
+
+.nav_final{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+.nav_final a{
+    color: #112238;
+    background-color: white;
+    text-decoration: none;
+
+}
+
+.boton_azul{
+    color: white;
+    background-color: #216CEA;
+    padding: 12px 24px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer; /* Añade una mano cuando mouse  */
+    border-radius: 6px;
+    border: none;
 }
