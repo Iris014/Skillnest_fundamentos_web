@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(245, 245, 245, 0.932);
+    color: rgb(46, 46, 46);
+    /* Altura exagerada para ver scroll */
+    min-height: 150vh;
+    padding-bottom: 50px;
+}
+/* Posición fija (fixed) */
+.barra-navegacion{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding: 15px 30px;
+    color: white;
+    background-color: rgb(43, 43, 43);
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* posición en capas */
+    box-shadow: 0 4px 6px rgb(0, 0, 0);
+}
+.barra-navegacion:h1{
+    font-size: 1.2rem;
+}
+.enlace-nav{
+    color: rgb(0, 150, 150);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.enlace-nav:hover{
+    color: lightblue;
+}
+/* Contenedor Principal */
+.contenedor-principal{
+    display: flex;
+    flex-wrap: wrap; /* Cuando los elementos no caben bajarán */
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px; /* Margen para que el contenido quede visible */
+}
+.tarjeta{
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 5px 15px black;
+    flex-direction: column;
+    gap: 15px;
+    transition: transform 0.3s ease; box-shadow: 0.3s ease;
+}
+.tarjeta:hover{
+    transform: translateY(-10px); /* movimiento hacia arriba */
+    box-shadow: 0 -10px -5px black;
+}
