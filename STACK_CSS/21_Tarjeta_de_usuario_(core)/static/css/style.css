@@ -15,7 +15,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 600px;
+    height: 500px;
+    margin-top: 80px;
 }
 
 .tarjeta{
@@ -24,34 +25,39 @@ body {
     align-items: center;
     background-color: white;
     border-radius: 10px;
-    width: 350px;
-    height: 370px;
+    width: 325px;
+    height: 276px;
     padding:20px;
-    box-shadow: 0px 2px 15px -5px rgb(100, 100, 100);
+    box-shadow: 0px 2px 9px -2px rgb(158, 158, 158);
     flex-direction: column;
 }
 
 .titulo{
-    font-weight: 650;
-    font-size: 25px;
-    color: #333333;
+    font-weight: 685;
+    font-size: 1.335rem;
+    color: #292929;
 }
 
 .ocupacion{
-    font-size: 1.1rem;
+    font-weight: 540;
+    font-size: 1rem;
     color: #787878;
     padding-bottom: 10px;
-    margin-top: 15px;
+    margin-top: 18px;
 }
 
 .texto{
-    margin-top: 10px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .descripcion{
-    font-size: 0.9rem;
+    font-size: 0.8435rem;
     color: #6E6E6E;
-    line-height: 1.4;
-    font-weight: 500;
+    line-height: 1.35;
+    font-weight: 545;
 }
 
 .contacto{
@@ -60,8 +66,8 @@ body {
     gap: 10px;
     color: #0000EE;
     line-height: 1.4;
-    font-size: 1.1rem;
-    margin-top: 20px;
+    font-size: 1.05rem;
+    margin-top: 10px;
 }
 
 /* imagen */
@@ -72,16 +78,17 @@ body {
     margin-top: 15px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 img{
     position: absolute;
-    top: -220px;
-    left: 100px;
-    width: 160px;
-    height: 160px;
+    top: -170px;
+    left: 115px;
+    width: 98px;
+    height: 98px;
     border-radius: 50%;
-    border: 1px white;
+    border: 2px white;
 }
 
 
@@ -96,14 +103,17 @@ img{
 .conectar{
     color: white;
     background-color: #3498DB;
-    padding: 12px 27px;
+    padding: 10px 29px;
+    padding-top: 11px;
     font-size: 15px;
+    font-weight: 540;
     cursor: pointer;
     border-radius: 6px;
     border: none;
-    margin-top: 5px;
-    width: 80%;
+    margin-top: 7px;
+    width: 87%;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 0.82rem;
 }
