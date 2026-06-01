@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 480px;
     margin-top: 80px;
 }
 
@@ -67,7 +67,7 @@ body {
     color: #0000EE;
     line-height: 1.4;
     font-size: 1.05rem;
-    margin-top: 10px;
+    margin-top: 7px;
 }
 
 /* imagen */
