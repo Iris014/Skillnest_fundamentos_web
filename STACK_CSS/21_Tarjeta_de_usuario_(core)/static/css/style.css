@@ -20,61 +20,66 @@ body {
 
 .tarjeta{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     background-color: white;
     border-radius: 10px;
-    width: 300px;
+    width: 350px;
+    height: 370px;
     padding:20px;
     box-shadow: 0px 2px 15px -5px rgb(100, 100, 100);
     flex-direction: column;
-    gap: 15px;
-}
-
-.ocupacion{
-    font-size: 1.3rem;
-    color: #777777;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.167);
-    padding-bottom: 10px;
-}
-.descripcion{
-    font-size: 0.9rem;
-    color:rgb(75, 74, 74);
-    line-height: 1.4; /* interlineado: separación de parrafo. */
-}
-
-.tarjeta a{
-    color: #0000EE;
-}
-
-.bloque-normal{
-    background-color: rgb(201, 201, 201);
-    color:#333333;
-    height: 500px;
-    padding:12px;
-    text-align: center;
-    border-radius: 6px;
-    font-weight: bold;
-    display: flex;
-    justify-content: flex-end;
 }
 
 .titulo{
+    font-weight: 650;
     font-size: 25px;
+    color: #333333;
 }
+
+.ocupacion{
+    font-size: 1.1rem;
+    color: #787878;
+    padding-bottom: 10px;
+    margin-top: 15px;
+}
+
+.texto{
+    margin-top: 10px;
+}
+.descripcion{
+    font-size: 0.9rem;
+    color: #6E6E6E;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: #0000EE;
+    line-height: 1.4;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
 /* imagen */
 
 .bloque-relativo{
     position: relative;
     height: 40px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 img{
     position: absolute;
     top: -220px;
     left: 100px;
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     border: 1px white;
 }
