@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*
+    <header class="header">
+        <nav class="nav"></nav>
+    </header>
+    <main class="contenedor-principal">
+        <section class="columna-izquierda">
+            <div class="tarjeta-perfil">
+                <div class="superior-tarjeta"></div>
+                <div class="descripcion-tarjeta">
+                    <img src="" alt="">
+                    <h1></h1>
+                </div>
+            </div>
+        </section>
+        <section class="columna-derecha">
+            <div class="tarjeta-conexiones">
+                <div class="row"></div>
+                <div class="row"></div>
+                <div class="row"></div>
+                <div class="row"></div>
+            </div>
+            <div class="tarjeta-conexiones">
+*/
+body {
+    background-color: white;
+    box-shadow: 0 1px 1px gainsboro;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 50px;
+    box-shadow: 0 -1px 3px 0px #EAEBEE;
+    margin: 50px;
+}
+
+.titulo{
+    font-size: 2rem; /* Tamaño letra rem: es tamaño*/
+    font-weight: 700; /* Grosor de letra */
+}
+
+h1{
+    color: #112238;
+}
+span{
+    color: #216CEA;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+.nav a{
+    color: #112238;
+    background-color: white;
+    text-decoration: none;
+}
+
+.contenedor-principal{
+
+}
+
+
+.boton_azul{
+    color: white;
+    background-color: #216CEA;
+    padding: 9px 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer; /* Añade una mano cuando mouse  */
+    border-radius: 6px;
+    border: none;
+}
+
+.columna-izquierda{
+    display: flex;
+    background-color: #F4F7FE;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 80px 50px;
+    margin: 50px;
+}
+
+.boton-principal{
+    color: white;
+    background-color: #216CEA;
+    padding: 12px 24px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer; /* Añade una mano cuando mouse  */
+    border-radius: 6px;
+    border: none;
+}
+
+button:hover{
+    background-color: #1d4ed8;
+}
+
+.contenido_principal{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1; /*  50% 1/2 */
+    width: 350px;
+}
+
+.inicio{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 450px
+}
+
+.columna-derecha{
+
+}
+
+.contenedor_imagen{
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.664);
+    justify-content: center;
+    align-items: center;
+}
+.contenedor_imagen img{
+    width: 710px;
+    height: 600px;
+}
+
+.subtitulo_inicio{
+    color: #112238;
+    font-size: 4rem;
+}
+
+.contenido_principal p{
+    color: #626A79;
+    font-size: 1.5rem;
+    margin-top: 25px;
+}
+
+.botones{
+    margin-top: 25px;
+}
+
+.enlace-mas{
+    color: #216CEA;
+    background-color: #F4F7FE;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+
+.seccion_contenedor{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor_subtitulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.subtitulo{
+    color: #112238;
+    text-align: center;
+    font-size: 2.5rem;
+}
