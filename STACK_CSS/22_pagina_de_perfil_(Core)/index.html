@@ -9,7 +9,13 @@
 </head>
 <body>
     <header class="header">
-        <nav class="nav"></nav>
+        <h1 class="titulo">Perfil</h1>
+        <nav class="nav">
+            <a href="#">Inicio</a>
+            <a href="#">Mi perfil</a>
+            <a href="#">Conexiones</a>
+            <button class="cerrar-sesion">Cerrar sesión</button>
+        </nav>
     </header>
     <main class="contenedor-principal">
         <section class="columna-izquierda">
@@ -18,22 +24,46 @@
                 <div class="descripcion-tarjeta">
                     <img src="" alt="">
                     <h1></h1>
+                    <p class="ubicacion">Bergen, Noruega</p>
+                    <p class="info">Desarrolladora Frontend Conocimientos en HTML, CSS, JavaScript</p>
+                    <button class="boton-editar">Editar perfil</button>
                 </div>
             </div>
         </section>
         <section class="columna-derecha">
             <div class="tarjeta-conexiones">
-                <div class="row"></div>
-                <div class="row"></div>
-                <div class="row"></div>
-                <div class="row"></div>
+                <div class="row menu">
+                <h2 class="panel-titulo">Solicitudes de conexión</h2>
+                </div>
+                <div class="boton">
+                    <button class="ver-todas">Ver todas</button>
+                </div>
+                <div class="row">
+                    <p class="solicitud">Steve Jobs</p>
+                    <button>
+                        <img src="static/images/si - no.jpg" alt="Si-O-No" class="boton-x">
+                        <img src="static/images/" alt="Si-O-No" class="boton-v">
+                    </button>
+                </div>
+                <div class="row">
+                    <p class="solicitud">Bill Gates</p>
+                    <button>
+                        <img src="static/images/si - no.jpg" alt="Si-O-No" class="boton-x">
+                        <img src="static/images/" alt="Si-O-No" class="boton-v">
+                    </button>
+                </div>
             </div>
             <div class="tarjeta-conexiones">
-                <div class="row"></div>
-                <div class="row"></div>
-                <div class="row"></div>
-                <div class="row"></div>
-                <div class="row"></div>
+                <div class="row menu">
+                    <h2 class="panel-titulo">Tus conexiones</h2>
+                </div>
+                <div class="boton">
+                    <button class="ver-todas">Ver todas</button>
+                </div>
+                <div class="row">Richard Stallman</div>
+                <div class="row">Linus Torvalds</div>
+                <div class="row">Ada Lovelace</div>
+                <div class="row">Grace Hopper</div>
             </div>
         </section>
     </main>

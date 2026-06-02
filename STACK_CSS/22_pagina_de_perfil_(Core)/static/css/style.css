@@ -36,7 +36,7 @@ body {
 }
 
 header{
-    background-color: white;
+    background-color: #2C3E50;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,7 +75,7 @@ span{
 }
 
 
-.boton_azul{
+.cerrar-sesion{
     color: white;
     background-color: #216CEA;
     padding: 9px 16px;
@@ -151,6 +151,28 @@ button:hover{
     color: #626A79;
     font-size: 1.5rem;
     margin-top: 25px;
+}
+
+
+.boton-cerrar{
+    position: absolute;
+    /* Se ancla exactamente a la esquina superior derecha de la 
+    ventana modal */
+    top:-12px;
+    right: -12px;
+    background-color: red;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgb(80, 0, 0);
+    border: 2px solid white;
 }
 
 .botones{
