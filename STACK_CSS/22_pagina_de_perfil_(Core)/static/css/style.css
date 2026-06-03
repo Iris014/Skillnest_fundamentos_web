@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 1px solid red;
 }
 
 body {
@@ -20,9 +21,9 @@ header{
 }
 
 .titulo{
+    color: #FFFFFF;
     font-size: 2rem; /* Tamaño letra rem: es tamaño*/
     font-weight: 700; /* Grosor de letra */
-    color: #FFFFFF;
 }
 
 .nav{
@@ -36,36 +37,9 @@ header{
     text-decoration: none;
 }
 
-
-
-/*
-    <header class="header">
-        <nav class="nav"></nav>
-    </header>
-    <main class="contenedor-principal">
-        <section class="columna-izquierda">
-            <div class="tarjeta-perfil">
-                <div class="superior-tarjeta"></div>
-                <div class="descripcion-tarjeta">
-                    <img src="" alt="">
-                    <h1></h1>
-                </div>
-            </div>
-        </section>
-        <section class="columna-derecha">
-            <div class="tarjeta-conexiones">
-                <div class="row"></div>
-                <div class="row"></div>
-                <div class="row"></div>
-                <div class="row"></div>
-            </div>
-            <div class="tarjeta-conexiones">
-*/
-
 .contenedor-principal{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding:30px;
     flex-direction: row;
     width: 100%;
 }
@@ -73,47 +47,49 @@ header{
 .columna-izquierda{
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: #FFFFFF;
     font-size: 16px;
     text-align: center;
-    gap: 50px;
-    padding: 80px 50px;
-    margin: 50px;
+    flex:2;
 }
 
 .tarjeta-perfil{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    padding: 90px;
+    position: absolute;
 }
 
 .superior-tarjeta{
-    background-color: #FFFFFF;
-    width: 90%;
+    background-color: #3498DB;
+    border-radius: 25px;
+    width: 100%;
+    height: 150px;
+    top: 20px;
+    position: relative;
 }
 
 .descripcion-tarjeta{
     background-color: #FFFFFF;
-    width: 90%;
+    width: 100%;
+    position: relative;
+    padding: 20px 0;
 }
 
 .descripcion-tarjeta img{
     display: flex;
-    border-radius: 10px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.664);
+    border-radius: 50%;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
     position: absolute;
+    top: -140px;
+    left: 190px;
 }
 
 .usuario{
     color: #343434;
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 .ubicacion{
@@ -131,15 +107,14 @@ header{
 .boton-editar{
     display: flex;
     background-color: #FFFFFF;
-    color: rgba(0, 0, 0, 0.706);
     padding: 12px 0;
     width: 70%;
     border: none;
-    margin-bottom: 20px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
+    position: absolute;
+}
+.boton-editar img{
+    width: 200px;
+    height: 70px;
 }
 
 .cerrar-sesion{
@@ -153,37 +128,10 @@ header{
     border: none;
 }
 
-
-.boton-principal{
-    color: white;
-    background-color: #216CEA;
-    padding: 12px 24px;
-    font-size: 1.5rem;
-    font-weight: 600;
-    cursor: pointer; /* Añade una mano cuando mouse  */
-    border-radius: 6px;
-    border: none;
-}
-
 button:hover{
     background-color: #1d4ed8;
+    color: #FFFFFF;
 }
-
-.contenido_principal{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    flex: 1; /*  50% 1/2 */
-    width: 350px;
-}
-
-.inicio{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 450px
-}
-
 
 
 .columna-derecha{
@@ -191,9 +139,8 @@ button:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 50%;
-    margin: 50px;
     font-size: 16px;
+    flex:1;
 }
 .tarjeta-conexiones{
     display: flex;
@@ -204,86 +151,52 @@ button:hover{
     background-color: #ffffff;
     width: 100%;
     padding: 20px;
-    margin-top: 50px;
 }
 .row{
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: row;
     background-color: #ffffff;
     text-align: center;
-    padding: 30px 0;
-    margin-top: 20px;
-    margin-left: 1%;
+    padding: 0 20px;
     font-size: 16px;
 }
 .row img{
-    width: 120px;
-    height: 80px;
-}
-.menu{
-    vertical-align: top;
-    display: flex;
-    width: 30.8%;
-    height: 200px;
-    margin:0 1%;
-}
-
-.boton-cerrar{
-    position: absolute;
-    /* Se ancla exactamente a la esquina superior derecha de la 
-    ventana modal */
-    top:-12px;
-    right: -12px;
-    background-color: red;
-    color: white;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 14px;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgb(80, 0, 0);
-    border: 2px solid white;
-}
-
-.botones{
-    margin-top: 25px;
+    height: 40px;
 }
 
 .ver-todas{
-    color: #216CEA;
-    background-color: #F4F7FE;
-    text-decoration: none;
+    color: #429FDE;
+    background-color: #FFFFFF;
+    border: solid 1px #429FDE;
     padding: 12px 24px;
     font-size: 1.5rem;
     font-weight: 600;
 }
 
-
-
-.seccion_contenedor{
-    display: flex;
-    flex-direction: column;
+.titulo-panel{
+    font-size: 1.4rem;
 }
 
-.contenedor_subtitulo{
+.solicitud{
+    color: #444444;
+    font-size: 1.1rem;
+    margin-top: 25px;
+}
+
+.perfil{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    margin-top: 50px;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
 }
-
-.subtitulo{
-    color: #112238;
-    text-align: center;
-    font-size: 2.5rem;
+.conexion{
+    color: #444444;
+    font-size: 1.1rem;
+    margin-top: 25px;
 }
-
 
 
