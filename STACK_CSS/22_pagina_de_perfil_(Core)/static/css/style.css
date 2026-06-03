@@ -4,6 +4,39 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #ECF0F1;
+    box-shadow: 0 1px 1px gainsboro;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #2C3E50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    box-shadow: 0 -1px 3px 0px #EAEBEE;
+}
+
+.titulo{
+    font-size: 2rem; /* Tamaño letra rem: es tamaño*/
+    font-weight: 700; /* Grosor de letra */
+    color: #FFFFFF;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+}
+.nav a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
 
 /*
     <header class="header">
@@ -28,52 +61,86 @@
             </div>
             <div class="tarjeta-conexiones">
 */
-body {
-    background-color: white;
-    box-shadow: 0 1px 1px gainsboro;
-    margin: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+
+.contenedor-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
 }
 
-header{
-    background-color: #2C3E50;
+.columna-izquierda{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 35px 50px;
-    box-shadow: 0 -1px 3px 0px #EAEBEE;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    text-align: center;
+    gap: 50px;
+    padding: 80px 50px;
     margin: 50px;
 }
 
-.titulo{
-    font-size: 2rem; /* Tamaño letra rem: es tamaño*/
-    font-weight: 700; /* Grosor de letra */
-}
-
-h1{
-    color: #112238;
-}
-span{
-    color: #216CEA;
-}
-
-.nav{
+.tarjeta-perfil{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
-    padding: 15px;
+    flex-direction: column;
+    padding: 90px;
 }
 
-.nav a{
-    color: #112238;
-    background-color: white;
+.superior-tarjeta{
+    background-color: #FFFFFF;
+    width: 90%;
+}
+
+.descripcion-tarjeta{
+    background-color: #FFFFFF;
+    width: 90%;
+}
+
+.descripcion-tarjeta img{
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.664);
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+}
+
+.usuario{
+    color: #343434;
+    font-size: 4rem;
+}
+
+.ubicacion{
+    color: #626A79;
+    font-size: 1.5rem;
+    margin-top: 25px;
+}
+
+.info{
+    color: #444444;
+    font-size: 1.5rem;
+    margin-top: 25px;
+}
+
+.boton-editar{
+    display: flex;
+    background-color: #FFFFFF;
+    color: rgba(0, 0, 0, 0.706);
+    padding: 12px 0;
+    width: 70%;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 25px;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
 }
-
-.contenedor-principal{
-
-}
-
 
 .cerrar-sesion{
     color: white;
@@ -86,15 +153,6 @@ span{
     border: none;
 }
 
-.columna-izquierda{
-    display: flex;
-    background-color: #F4F7FE;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    padding: 80px 50px;
-    margin: 50px;
-}
 
 .boton-principal{
     color: white;
@@ -126,33 +184,51 @@ button:hover{
     width: 450px
 }
 
+
+
 .columna-derecha{
-
-}
-
-.contenedor_imagen{
     display: flex;
-    border-radius: 10px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.664);
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    width: 50%;
+    margin: 50px;
+    font-size: 16px;
 }
-.contenedor_imagen img{
-    width: 710px;
-    height: 600px;
+.tarjeta-conexiones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 20px;
+    margin-top: 50px;
 }
-
-.subtitulo_inicio{
-    color: #112238;
-    font-size: 4rem;
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 20px;
+    margin-left: 1%;
+    font-size: 16px;
 }
-
-.contenido_principal p{
-    color: #626A79;
-    font-size: 1.5rem;
-    margin-top: 25px;
+.row img{
+    width: 120px;
+    height: 80px;
 }
-
+.menu{
+    vertical-align: top;
+    display: flex;
+    width: 30.8%;
+    height: 200px;
+    margin:0 1%;
+}
 
 .boton-cerrar{
     position: absolute;
@@ -179,7 +255,7 @@ button:hover{
     margin-top: 25px;
 }
 
-.enlace-mas{
+.ver-todas{
     color: #216CEA;
     background-color: #F4F7FE;
     text-decoration: none;
@@ -208,3 +284,6 @@ button:hover{
     text-align: center;
     font-size: 2.5rem;
 }
+
+
+
