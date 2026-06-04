@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid red;
 }
 
 body {
@@ -44,75 +43,92 @@ header{
     width: 100%;
 }
 
-.columna-izquierda{
+.columna-izquierda {
     display: flex;
     justify-content: center;
     font-size: 16px;
     text-align: center;
-    flex:2;
+    flex: 2;
+    padding-right: 20px;
 }
 
-.tarjeta-perfil{
+/* LA TARJETA DE PERFIL (Simple, con fondo blanco total) */
+.tarjeta-perfil {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    position: absolute;
-}
-
-.superior-tarjeta{
-    background-color: #3498DB;
-    border-radius: 25px;
-    width: 100%;
-    height: 150px;
-    top: 20px;
-    position: relative;
-}
-
-.descripcion-tarjeta{
     background-color: #FFFFFF;
-    width: 100%;
-    position: relative;
-    padding: 20px 0;
+    width: 450px;       /* Ancho fijo y sostenible */
+    border-radius: 8px; /* Esquinas redondeadas normales */
 }
 
-.descripcion-tarjeta img{
+/* EL BANNER SUPERIOR AZUL */
+.superior-tarjeta {
+    background-color: #3498DB;
+    width: 450px;       
+    height: 150px;      
+    /* Le damos sus propias esquinas redondeadas arriba para que encaje con la tarjeta */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* LA CONTENEDORA DE TEXTOS */
+.descripcion-tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 450px;       
+    padding: 20px;      /* UN SOLO VALOR: 20px de aire parejo por los 4 lados */
+}
+
+/* LA FOTO DE JANE DOE (Corregida sin porcentajes ni números negativos) */
+.descripcion-tarjeta img {
+    width: 150px;       
+    height: 150px;
+    border-radius: 75px; /* Valor fijo (la mitad del tamaño) para hacer el círculo perfecto */
+    border: 5px solid #FFFFFF; 
+    
+    /* En vez de márgenes negativos raros, usamos un margen superior normal */
+    margin-top: 15px;    
+    margin-bottom: 15px; 
+}
+
+.usuario {
+    color: #343434;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.ubicacion {
+    color: #626A79;
+    font-size: 1.2rem;
+    margin-top: 5px;   
+}
+
+.info {
+    color: #444444;
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+
+/* EL BOTÓN DE EDITAR PERFIL */
+.boton-editar {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    position: absolute;
-    top: -140px;
-    left: 190px;
-}
-
-.usuario{
-    color: #343434;
-    font-size: 2rem;
-}
-
-.ubicacion{
-    color: #626A79;
-    font-size: 1.5rem;
-    margin-top: 25px;
-}
-
-.info{
-    color: #444444;
-    font-size: 1.5rem;
-    margin-top: 25px;
-}
-
-.boton-editar{
-    display: flex;
     background-color: #FFFFFF;
-    padding: 12px 0;
-    width: 70%;
     border: none;
-    position: absolute;
+    cursor: pointer;
+    margin-top: 20px;   
 }
-.boton-editar img{
-    width: 200px;
-    height: 70px;
+
+/* El enlace/icono de engranaje azul interno */
+.boton-editar img {
+    width: 110px;       
+    height: 25px;       
+    margin-top: 0px;    /* Reseteamos usando dos valores o números directos */
+    margin-bottom: 0px; 
+    border: none;
+    border-radius: 0px;
 }
 
 .cerrar-sesion{
