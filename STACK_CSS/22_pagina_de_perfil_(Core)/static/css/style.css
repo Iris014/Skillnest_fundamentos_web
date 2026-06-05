@@ -49,49 +49,41 @@ header{
     font-size: 16px;
     text-align: center;
     flex: 2;
-    padding-right: 20px; /* Separación sutil entre las dos columnas principales */
+    padding-right: 20px;
 }
 
-/* LA TARJETA DE PERFIL (Ya no es absolute, ahora respeta Flexbox) */
 .tarjeta-perfil {
     display: flex;
     flex-direction: column;
-    background-color: #FFFFFF; /* El fondo blanco ahora lo tiene la tarjeta completa */
+    background-color: #FFFFFF;
     width: 100%;
-    border-radius: 4px; /* Esquinas ligeramente suaves */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    overflow: hidden; /* Evita que el fondo azul se salga de las esquinas redondeadas */
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
 }
 
-/* EL BANNER SUPERIOR AZUL */
 .superior-tarjeta {
-    background-color: #3498DB;
+    background-color: #3498DB; 
     width: 100%;
     height: 150px;
-    /* Eliminamos top y position: relative */
+    border-radius: 8px;
 }
 
-/* LA CONTENEDORA DE TEXTOS */
 .descripcion-tarjeta {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra horizontalmente textos, foto y botón */
-    padding: 0 30px 30px 30px;
-    /* Eliminamos width: 100% y position: relative */
+    align-items: center; 
+    width: 100%;
+    padding: 20px 30px;
 }
 
-/* LA FOTO DE JANE DOE */
 .descripcion-tarjeta img {
-    width: 150px;       /* Tamaño proporcional al círculo de la imagen guía */
+    width: 150px;
     height: 150px;
-    border-radius: 50%; /* La transforma en un círculo perfecto */
-    border: 5px solid #FFFFFF; /* El borde blanco grueso característico */
+    border-radius: 75px;
+    border: 5px solid #FFFFFF; 
     
-    /* EL TRUCO: Un margen negativo hacia arriba la sube limpiamente sobre el fondo azul */
-    margin-top: -75px; 
+    margin-top: -75px;
     margin-bottom: 15px;
-    
-    /* Eliminamos display:flex interno, position: absolute, top y left fijos */
 }
 
 .usuario {
@@ -103,36 +95,32 @@ header{
 .ubicacion {
     color: #626A79;
     font-size: 1.2rem;
-    margin-top: 5px;   /* Reducimos el espacio exagerado */
+    margin-top: 5px;    
 }
 
 .info {
     color: #444444;
     font-size: 1.1rem;
     margin-top: 15px;
-    line-height: 1.4;  /* Da una lectura más cómoda al texto largo */
+    line-height: 22px;
 }
 
-/* EL BOTÓN DE EDITAR PERFIL */
 .boton-editar {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
     background-color: #FFFFFF;
     border: none;
     cursor: pointer;
-    margin-top: 20px;
-    /* Eliminamos position: absolute y width: 70% */
+    margin-top: 20px;     
 }
 
-/* El icono de engranaje azul interno */
 .boton-editar img {
-    width: 110px;  /* Ajustamos al tamaño real del texto/icono azul de tu imagen */
-    height: auto;
-    margin: 0;     /* Limpiamos cualquier margen heredado */
+    width: 110px;         
+    height: 25px;        
+    margin: 0px 0px;
     border: none;
-    border-radius: 0;
+    border-radius: 0px;
 }
 
 .cerrar-sesion{
@@ -141,7 +129,7 @@ header{
     padding: 9px 16px;
     font-size: 1rem;
     font-weight: 600;
-    cursor: pointer; /* Añade una mano cuando mouse  */
+    cursor: pointer;
     border-radius: 6px;
     border: none;
 }
