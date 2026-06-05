@@ -49,47 +49,49 @@ header{
     font-size: 16px;
     text-align: center;
     flex: 2;
-    padding-right: 20px;
+    padding-right: 20px; /* Separación sutil entre las dos columnas principales */
 }
 
-/* LA TARJETA DE PERFIL (Simple, con fondo blanco total) */
+/* LA TARJETA DE PERFIL (Ya no es absolute, ahora respeta Flexbox) */
 .tarjeta-perfil {
     display: flex;
     flex-direction: column;
-    background-color: #FFFFFF;
-    width: 450px;       /* Ancho fijo y sostenible */
-    border-radius: 8px; /* Esquinas redondeadas normales */
+    background-color: #FFFFFF; /* El fondo blanco ahora lo tiene la tarjeta completa */
+    width: 100%;
+    border-radius: 4px; /* Esquinas ligeramente suaves */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden; /* Evita que el fondo azul se salga de las esquinas redondeadas */
 }
 
 /* EL BANNER SUPERIOR AZUL */
 .superior-tarjeta {
     background-color: #3498DB;
-    width: 450px;       
-    height: 150px;      
-    /* Le damos sus propias esquinas redondeadas arriba para que encaje con la tarjeta */
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    width: 100%;
+    height: 150px;
+    /* Eliminamos top y position: relative */
 }
 
 /* LA CONTENEDORA DE TEXTOS */
 .descripcion-tarjeta {
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    width: 450px;       
-    padding: 20px;      /* UN SOLO VALOR: 20px de aire parejo por los 4 lados */
+    align-items: center; /* Centra horizontalmente textos, foto y botón */
+    padding: 0 30px 30px 30px;
+    /* Eliminamos width: 100% y position: relative */
 }
 
-/* LA FOTO DE JANE DOE (Corregida sin porcentajes ni números negativos) */
+/* LA FOTO DE JANE DOE */
 .descripcion-tarjeta img {
-    width: 150px;       
+    width: 150px;       /* Tamaño proporcional al círculo de la imagen guía */
     height: 150px;
-    border-radius: 75px; /* Valor fijo (la mitad del tamaño) para hacer el círculo perfecto */
-    border: 5px solid #FFFFFF; 
+    border-radius: 50%; /* La transforma en un círculo perfecto */
+    border: 5px solid #FFFFFF; /* El borde blanco grueso característico */
     
-    /* En vez de márgenes negativos raros, usamos un margen superior normal */
-    margin-top: 15px;    
-    margin-bottom: 15px; 
+    /* EL TRUCO: Un margen negativo hacia arriba la sube limpiamente sobre el fondo azul */
+    margin-top: -75px; 
+    margin-bottom: 15px;
+    
+    /* Eliminamos display:flex interno, position: absolute, top y left fijos */
 }
 
 .usuario {
@@ -101,13 +103,14 @@ header{
 .ubicacion {
     color: #626A79;
     font-size: 1.2rem;
-    margin-top: 5px;   
+    margin-top: 5px;   /* Reducimos el espacio exagerado */
 }
 
 .info {
     color: #444444;
     font-size: 1.1rem;
     margin-top: 15px;
+    line-height: 1.4;  /* Da una lectura más cómoda al texto largo */
 }
 
 /* EL BOTÓN DE EDITAR PERFIL */
@@ -115,20 +118,21 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 8px;
     background-color: #FFFFFF;
     border: none;
     cursor: pointer;
-    margin-top: 20px;   
+    margin-top: 20px;
+    /* Eliminamos position: absolute y width: 70% */
 }
 
-/* El enlace/icono de engranaje azul interno */
+/* El icono de engranaje azul interno */
 .boton-editar img {
-    width: 110px;       
-    height: 25px;       
-    margin-top: 0px;    /* Reseteamos usando dos valores o números directos */
-    margin-bottom: 0px; 
+    width: 110px;  /* Ajustamos al tamaño real del texto/icono azul de tu imagen */
+    height: auto;
+    margin: 0;     /* Limpiamos cualquier margen heredado */
     border: none;
-    border-radius: 0px;
+    border-radius: 0;
 }
 
 .cerrar-sesion{
