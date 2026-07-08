@@ -88,6 +88,8 @@ let tipoUsuario = prompt("Ingrese tipo de usuario (Estudiante/Profesor):").toLow
     alert("Préstamo permitido. ¡Mensaje diferente para Profesor!");
   } else if (tipoUsuario === "profesor" && cantidadLibros > 5) {
     alert("Supera el límite permitido para Profesor.");
+  } else {
+    alert("Ingresar datos válidos!");
   }
 }
 
