@@ -38,7 +38,7 @@ function ejercicio1() {
   } else if (peso > 5 && peso <= 10) {
     envio = "Más de 5 kg y hasta 10 kg";
     valor = "$8000";
-  } else if (peso > 10) {
+  } else {
     envio = "Más de 10 kg";
     valor = "$15000";
   }
@@ -162,13 +162,10 @@ function ejercicio4() {
   } else if (anosServicio >= 1 && anosServicio <= 5) {
     nivel = "Intermedio";
     mensaje = "Sí recibe bonificación.";
-  } else if (anosServicio > 5) {
+  } else {
     nivel = "Avanzado";
     mensaje = "Sí recibe bonificación.";
-  } else {
-    nivel = "Desconocido";
-    mensaje = "Error en los datos ingresados.";
-  }
+  } 
   alert(`Nombre: ${nombre}
     \nNivel de antigüedad: ${nivel}
     \nMensaje: ${mensaje}`);
