@@ -155,7 +155,7 @@ function ejercicio4() {
   } else if (usuario === "admin") {
     alert("Contraseña Incorrecta");
   } else {
-    alert(`Usuario ${usuario} no encontrado!`);
+    alert(`Usuario ${usuario} no encontrado`);
   }
 }
 
