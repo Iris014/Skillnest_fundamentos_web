@@ -1,4 +1,4 @@
-console.log("Conexion con js")
+console.log("Conexion con js");
 
 // # Ejercicio 1: Calculadora de Envío
 
@@ -25,28 +25,24 @@ console.log("Conexion con js")
 // - Valor correspondiente al despacho
 
 function ejercicio1() {
-    let nombre = prompt("Ingrese el nombre del cliente:");
-    let peso = prompt("Ingrese el peso del paquete (kg):");
-    
-    let pesoNumero = parseInt(peso);
-    let categoria = "";
-    let valor = "";
+  let nombre = prompt("Ingrese el nombre del cliente:");
+  let peso = parseInt(prompt("Ingrese el peso del paquete (kg):"));
 
-    if (pesoNumero <= 2) {
-        categoria = "Hasta 2 kg";
-        valor = "$3000";
-    } else if (pesoNumero > 2 && pesoNumero <= 5) {
-        categoria = "Más de 2 kg y hasta 5 kg";
-        valor = "$5000";
-    } else if (pesoNumero > 5 && pesoNumero <= 10) {
-        categoria = "Más de 5 kg y hasta 10 kg";
-        valor = "$8000";
-    } else if (pesoNumero > 10) {
-        categoria = "Más de 10 kg";
-        valor = "$15000";
-    }
+  if (peso <= 2) {
+    categoria = "Hasta 2 kg";
+    valor = "$3000";
+  } else if (peso > 2 && peso <= 5) {
+    categoria = "Más de 2 kg y hasta 5 kg";
+    valor = "$5000";
+  } else if (peso > 5 && peso <= 10) {
+    categoria = "Más de 5 kg y hasta 10 kg";
+    valor = "$8000";
+  } else if (peso > 10) {
+    categoria = "Más de 10 kg";
+    valor = "$15000";
+  }
 
-    alert(`Nombre del cliente: ${nombre} 
+  alert(`Nombre del cliente: ${nombre} 
         \nCategoría del envío: ${categoria} 
         \nValor correspondiente al despacho: ${valor}`);
 }
@@ -80,28 +76,18 @@ function ejercicio1() {
 // Utilizar operadores lógicos para realizar las validaciones.
 
 function ejercicio2() {
-    let tipoUsuario = prompt("Ingrese tipo de usuario (Estudiante / Profesor):");
-    let cantidadLibros = prompt("Ingrese la cantidad de libros solicitados:");
+let tipoUsuario = prompt("Ingrese tipo de usuario (Estudiante/Profesor):").toLowerCase();
+  let cantidadLibros = parseInt(prompt("Cantidad de libros solicitados:"));
 
-    let cantidadNumero = parseInt(cantidadLibros);
-
-    if (tipoUsuario == "Estudiante" && cantidadNumero <= 3) {
-        alert(`El préstamo está permitido.
-            \nNo supera el límite permitido.
-            \nMensaje: Préstamo aprobado para estudiante.`);
-    } else if (tipoUsuario == "Estudiante" && cantidadNumero > 3) {
-        alert(`El préstamo NO está permitido.
-            \nSupera el límite permitido.
-            \nMensaje: Los estudiantes solo pueden pedir hasta 3 libros.`);
-    } else if (tipoUsuario == "Profesor" && cantidadNumero <= 5) {
-        alert(`El préstamo está permitido.
-            \nNo supera el límite permitido.
-            \nMensaje: Préstamo aprobado para profesor.`);
-    } else if (tipoUsuario == "Profesor" && cantidadNumero > 5) {
-        alert(`El préstamo NO está permitido.
-            \nSupera el límite permitido.
-            \nMensaje: Los profesores solo pueden pedir hasta 5 libros.`);
-    }
+  if (tipoUsuario === "estudiante" && cantidadLibros <= 3) {
+    alert("Préstamo permitido. ¡Mensaje diferente para Estudiante!");
+  } else if (tipoUsuario === "estudiante" && cantidadLibros > 3) {
+    alert("Supera el límite permitido para Estudiante.");
+  } else if (tipoUsuario === "profesor" && cantidadLibros <= 5) {
+    alert("Préstamo permitido. ¡Mensaje diferente para Profesor!");
+  } else if (tipoUsuario === "profesor" && cantidadLibros > 5) {
+    alert("Supera el límite permitido para Profesor.");
+  }
 }
 
 // ---
@@ -125,28 +111,17 @@ function ejercicio2() {
 // - Edad
 // - Categoría asignada
 
-
 function ejercicio3() {
-    let nombre = prompt("Ingrese el nombre del participante:");
-    let edad = prompt("Ingrese la edad:");
-
-
-    let edadNumero = parseInt(edad);
-    let categoriaAsignada = "";
-
-    if (edadNumero <= 12) {
-        categoriaAsignada = "Infantil";
-    } else if (edadNumero > 12 && edadNumero <= 17) {
-        categoriaAsignada = "Juvenil";
-    } else if (edadNumero > 17 && edadNumero <= 35) {
-        categoriaAsignada = "Adulto";
-    } else if (edadNumero > 35) {
-        categoriaAsignada = "Senior";
-    }
-
-    alert(`Nombre: ${nombre}
-        \nEdad: ${edadNumero}
-        \nCategoría asignada: ${categoriaAsignada}`);
+  let temperatura = parseInt(prompt("Ingresa la temperatura actual:"));
+  if (temperatura < 10 && temperatura <= 10) {
+    mensaje = "Hace frío";
+  } else if (temperatura >= 10 && temperatura <= 24) {
+    mensaje = "Temperatura agradable";
+  } else if (temperatura >= 35 && temperatura <= 50) {
+    mensaje = "Hace calor";
+  } else {
+    mensaje = "Ingresar valores válidos!";
+  }
 }
 
 // ---
@@ -170,29 +145,18 @@ function ejercicio3() {
 // - Nivel de antigüedad
 // - Mensaje indicando si recibe o no bonificación.
 
-
 function ejercicio4() {
-    let nombre = prompt("Ingrese el nombre del trabajador:");
-    let anosServicio = prompt("Ingrese los años de servicio:");
+  let usuario = prompt("Ingrese su nombre de usuario:");
 
-    let anosNumero = parseInt(anosServicio);
-    let nivelAntiguedad = "";
-    let mensajeBonificacion = "";
+  let contrasena = parseInt(prompt("Ingrese su contraseña:"));
 
-    if (anosNumero < 1) {
-        nivelAntiguedad = "Inicial";
-        mensajeBonificacion = "No recibe bonificación.";
-    } else if (anosNumero >= 1 && anosNumero <= 5) {
-        nivelAntiguedad = "Intermedio";
-        mensajeBonificacion = "Sí recibe bonificación.";
-    } else if (anosNumero > 5) {
-        nivelAntiguedad = "Avanzado";
-        mensajeBonificacion = "Sí recibe bonificación.";
-    }
-
-    alert(`Nombre: ${nombre}
-        \nNivel de antigüedad: ${nivelAntiguedad}
-        \nMensaje: ${mensajeBonificacion}`);
+  if (usuario === "admin" && contrasena === "12345") {
+    alert("Bienvenido Administrador: " + usuario);
+  } else if (usuario === "admin") {
+    alert("Contraseña Incorrecta");
+  } else {
+    alert(`Usuario ${usuario} no encontrado!`);
+  }
 }
 
 // ---
@@ -220,28 +184,21 @@ function ejercicio4() {
 // - Velocidad
 // - Clasificación obtenida
 
-
 function ejercicio5() {
-    let nombreConductor = prompt("Ingrese el nombre del conductor:");
-    let velocidadRegistrada = prompt("Ingrese la velocidad registrada:");
+  let NombreEstudiante = prompt("Nombre del estudiante:");
+  let nota1 = parseInt(prompt("Ingresar primera nota:"));
 
-    let velocidadNumero = parseInt(velocidadRegistrada);
-    let clasificacionObtenida = "";
+  let nota2 = parseInt(prompt("Ingresar segunda nota:"));
+  let nota3 = parseInt(prompt("Ingresar tercera nota:"));
 
-if (velocidadNumero <= 40) {
-        clasificacionObtenida = "Velocidad baja";
-    } else if (velocidadNumero > 40 && velocidadNumero <= 90) {
-        clasificacionObtenida = "Velocidad moderada";
-    } else if (velocidadNumero > 90 && velocidadNumero <= 120) {
-        clasificacionObtenida = "Velocidad alta";
-    } else if (velocidadNumero > 120) {
-        clasificacionObtenida = "Velocidad excesiva";
-        alert("¡Ha excedido la velocidad permitida!");
-    }
+  let promedio = (nota1 + nota2 + nota3) / 3;
 
-    alert(`Nombre del conductor: ${nombreConductor}
-        \nVelocidad: ${velocidadNumero}
-        \nClasificación obtenida: ${clasificacionObtenida}`);
+  if (promedio >= 6.0) {
+    alert("Aprobado con excelencia");
+  } else if (promedio <= 4.0 && promedio > 5.9) {
+    alert("Aprobado");
+  } else if (promedio <= 4.0) {
+  }
 }
 
 // ---
