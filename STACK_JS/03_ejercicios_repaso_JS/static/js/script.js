@@ -1,3 +1,5 @@
+console.log("Conexion con js")
+
 // # Ejercicio 1: Calculadora de Envío
 
 // ## Enunciado
@@ -21,6 +23,33 @@
 // - Nombre del cliente
 // - Categoría del envío
 // - Valor correspondiente al despacho
+
+function ejercicio1() {
+    let nombre = prompt("Ingrese el nombre del cliente:");
+    let peso = prompt("Ingrese el peso del paquete (kg):");
+    
+    let pesoNumero = parseInt(peso);
+    let categoria = "";
+    let valor = "";
+
+    if (pesoNumero <= 2) {
+        categoria = "Hasta 2 kg";
+        valor = "$3000";
+    } else if (pesoNumero > 2 && pesoNumero <= 5) {
+        categoria = "Más de 2 kg y hasta 5 kg";
+        valor = "$5000";
+    } else if (pesoNumero > 5 && pesoNumero <= 10) {
+        categoria = "Más de 5 kg y hasta 10 kg";
+        valor = "$8000";
+    } else if (pesoNumero > 10) {
+        categoria = "Más de 10 kg";
+        valor = "$15000";
+    }
+
+    alert(`Nombre del cliente: ${nombre} 
+        \nCategoría del envío: ${categoria} 
+        \nValor correspondiente al despacho: ${valor}`);
+}
 
 // ---
 
@@ -50,6 +79,31 @@
 
 // Utilizar operadores lógicos para realizar las validaciones.
 
+function ejercicio2() {
+    let tipoUsuario = prompt("Ingrese tipo de usuario (Estudiante / Profesor):");
+    let cantidadLibros = prompt("Ingrese la cantidad de libros solicitados:");
+
+    let cantidadNumero = parseInt(cantidadLibros);
+
+    if (tipoUsuario == "Estudiante" && cantidadNumero <= 3) {
+        alert(`El préstamo está permitido.
+            \nNo supera el límite permitido.
+            \nMensaje: Préstamo aprobado para estudiante.`);
+    } else if (tipoUsuario == "Estudiante" && cantidadNumero > 3) {
+        alert(`El préstamo NO está permitido.
+            \nSupera el límite permitido.
+            \nMensaje: Los estudiantes solo pueden pedir hasta 3 libros.`);
+    } else if (tipoUsuario == "Profesor" && cantidadNumero <= 5) {
+        alert(`El préstamo está permitido.
+            \nNo supera el límite permitido.
+            \nMensaje: Préstamo aprobado para profesor.`);
+    } else if (tipoUsuario == "Profesor" && cantidadNumero > 5) {
+        alert(`El préstamo NO está permitido.
+            \nSupera el límite permitido.
+            \nMensaje: Los profesores solo pueden pedir hasta 5 libros.`);
+    }
+}
+
 // ---
 
 // # Ejercicio 3: Clasificación Deportiva
@@ -71,6 +125,30 @@
 // - Edad
 // - Categoría asignada
 
+
+function ejercicio3() {
+    let nombre = prompt("Ingrese el nombre del participante:");
+    let edad = prompt("Ingrese la edad:");
+
+
+    let edadNumero = parseInt(edad);
+    let categoriaAsignada = "";
+
+    if (edadNumero <= 12) {
+        categoriaAsignada = "Infantil";
+    } else if (edadNumero > 12 && edadNumero <= 17) {
+        categoriaAsignada = "Juvenil";
+    } else if (edadNumero > 17 && edadNumero <= 35) {
+        categoriaAsignada = "Adulto";
+    } else if (edadNumero > 35) {
+        categoriaAsignada = "Senior";
+    }
+
+    alert(`Nombre: ${nombre}
+        \nEdad: ${edadNumero}
+        \nCategoría asignada: ${categoriaAsignada}`);
+}
+
 // ---
 
 // # Ejercicio 4: Sistema de Bonificación
@@ -91,6 +169,31 @@
 // - Nombre
 // - Nivel de antigüedad
 // - Mensaje indicando si recibe o no bonificación.
+
+
+function ejercicio4() {
+    let nombre = prompt("Ingrese el nombre del trabajador:");
+    let anosServicio = prompt("Ingrese los años de servicio:");
+
+    let anosNumero = parseInt(anosServicio);
+    let nivelAntiguedad = "";
+    let mensajeBonificacion = "";
+
+    if (anosNumero < 1) {
+        nivelAntiguedad = "Inicial";
+        mensajeBonificacion = "No recibe bonificación.";
+    } else if (anosNumero >= 1 && anosNumero <= 5) {
+        nivelAntiguedad = "Intermedio";
+        mensajeBonificacion = "Sí recibe bonificación.";
+    } else if (anosNumero > 5) {
+        nivelAntiguedad = "Avanzado";
+        mensajeBonificacion = "Sí recibe bonificación.";
+    }
+
+    alert(`Nombre: ${nombre}
+        \nNivel de antigüedad: ${nivelAntiguedad}
+        \nMensaje: ${mensajeBonificacion}`);
+}
 
 // ---
 
@@ -116,6 +219,30 @@
 // - Nombre del conductor
 // - Velocidad
 // - Clasificación obtenida
+
+
+function ejercicio5() {
+    let nombreConductor = prompt("Ingrese el nombre del conductor:");
+    let velocidadRegistrada = prompt("Ingrese la velocidad registrada:");
+
+    let velocidadNumero = parseInt(velocidadRegistrada);
+    let clasificacionObtenida = "";
+
+if (velocidadNumero <= 40) {
+        clasificacionObtenida = "Velocidad baja";
+    } else if (velocidadNumero > 40 && velocidadNumero <= 90) {
+        clasificacionObtenida = "Velocidad moderada";
+    } else if (velocidadNumero > 90 && velocidadNumero <= 120) {
+        clasificacionObtenida = "Velocidad alta";
+    } else if (velocidadNumero > 120) {
+        clasificacionObtenida = "Velocidad excesiva";
+        alert("¡Ha excedido la velocidad permitida!");
+    }
+
+    alert(`Nombre del conductor: ${nombreConductor}
+        \nVelocidad: ${velocidadNumero}
+        \nClasificación obtenida: ${clasificacionObtenida}`);
+}
 
 // ---
 
