@@ -27,24 +27,23 @@ console.log("Conexion con js");
 function ejercicio1() {
   let nombre = prompt("Ingrese el nombre del cliente:");
   let peso = parseInt(prompt("Ingrese el peso del paquete (kg):"));
-  let envio = "";
 
   if (peso <= 2) {
-    envio = "Hasta 2 kg";
+    categoria = "Hasta 2 kg";
     valor = "$3000";
   } else if (peso > 2 && peso <= 5) {
-    envio = "Más de 2 kg y hasta 5 kg";
+    categoria = "Más de 2 kg y hasta 5 kg";
     valor = "$5000";
   } else if (peso > 5 && peso <= 10) {
-    envio = "Más de 5 kg y hasta 10 kg";
+    categoria = "Más de 5 kg y hasta 10 kg";
     valor = "$8000";
   } else if (peso > 10) {
-    envio = "Más de 10 kg";
+    categoria = "Más de 10 kg";
     valor = "$15000";
   }
 
   alert(`Nombre del cliente: ${nombre} 
-        \nCategoría del envío: ${envio} 
+        \nCategoría del envío: ${categoria} 
         \nValor correspondiente al despacho: ${valor}`);
 }
 
@@ -113,21 +112,16 @@ let tipoUsuario = prompt("Ingrese tipo de usuario (Estudiante/Profesor):").toLow
 // - Categoría asignada
 
 function ejercicio3() {
-  let nombre = prompt("Ingrese el nombre del participante:");
-  let edad = parseInt(prompt("Ingrese la edad del participante:"));
-  let categoria = "";
-    if (edad > 0 && edad <= 12) {
-    categoria = "Infantil";
-  } else if (edad > 12 && edad <= 17) {
-    categoria = "Juvenil";
-  } else if (edad > 17 && edad <= 35) {
-    categoria = "Adulto";
+  let temperatura = parseInt(prompt("Ingresa la temperatura actual:"));
+  if (temperatura < 10 && temperatura <= 10) {
+    mensaje = "Hace frío";
+  } else if (temperatura >= 10 && temperatura <= 24) {
+    mensaje = "Temperatura agradable";
+  } else if (temperatura >= 35 && temperatura <= 50) {
+    mensaje = "Hace calor";
   } else {
-    categoria = "Senior";
+    mensaje = "Ingresar valores válidos!";
   }
-  alert(`Nombre: ${nombre}
-    \nEdad: ${edad}
-    \nCategoría asignada: ${categoria}`);
 }
 
 // ---
@@ -152,26 +146,17 @@ function ejercicio3() {
 // - Mensaje indicando si recibe o no bonificación.
 
 function ejercicio4() {
-  let nombre = prompt("Ingrese el nombre del trabajador:");
-  let anosServicio = parseInt(prompt("Ingrese los años de servicio:"));
-  let nivel = "";
-  let mensaje = "";
-  if (anosServicio < 1) {
-    nivel = "Inicial";
-    mensaje = "No recibe bonificación.";
-  } else if (anosServicio >= 1 && anosServicio <= 5) {
-    nivel = "Intermedio";
-    mensaje = "Sí recibe bonificación.";
-  } else if (anosServicio > 5) {
-    nivel = "Avanzado";
-    mensaje = "Sí recibe bonificación.";
+  let usuario = prompt("Ingrese su nombre de usuario:");
+
+  let contrasena = parseInt(prompt("Ingrese su contraseña:"));
+
+  if (usuario === "admin" && contrasena === "12345") {
+    alert("Bienvenido Administrador: " + usuario);
+  } else if (usuario === "admin") {
+    alert("Contraseña Incorrecta");
   } else {
-    nivel = "Desconocido";
-    mensaje = "Error en los datos ingresados.";
+    alert(`Usuario ${usuario} no encontrado`);
   }
-  alert(`Nombre: ${nombre}
-    \nNivel de antigüedad: ${nivel}
-    \nMensaje: ${mensaje}`);
 }
 
 // ---
@@ -200,24 +185,20 @@ function ejercicio4() {
 // - Clasificación obtenida
 
 function ejercicio5() {
-  let nombreConductor = prompt("Ingrese el nombre del conductor:");
-  let velocidad = parseInt(prompt("Ingrese la velocidad registrada (km/h):"));
-  let clasificacion = "";
-  if (velocidad <= 40) {
-    clasificacion = "Velocidad baja";
-  } else if (velocidad > 40 && velocidad <= 90) {
-    clasificacion = "Velocidad moderada";
-  } else if (velocidad > 90 && velocidad <= 120) {
-    clasificacion = "Velocidad alta";
-  } else if (velocidad > 120) {
-    clasificacion = "Velocidad excesiva";
-    alert("¡Atención! Ha excedido la velocidad máxima permitida.");
-  } else {
-    clasificacion = "Velocidad no válida";
+  let NombreEstudiante = prompt("Nombre del estudiante:");
+  let nota1 = parseInt(prompt("Ingresar primera nota:"));
+
+  let nota2 = parseInt(prompt("Ingresar segunda nota:"));
+  let nota3 = parseInt(prompt("Ingresar tercera nota:"));
+
+  let promedio = (nota1 + nota2 + nota3) / 3;
+
+  if (promedio >= 6.0) {
+    alert("Aprobado con excelencia");
+  } else if (promedio <= 4.0 && promedio > 5.9) {
+    alert("Aprobado");
+  } else if (promedio <= 4.0) {
   }
-  alert(`Nombre del conductor: ${nombreConductor}
-    \nVelocidad: ${velocidad} km/h
-    \nClasificación obtenida: ${clasificacion}`);
 }
 
 // ---
