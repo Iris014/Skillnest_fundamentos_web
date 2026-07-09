@@ -17,7 +17,7 @@ function sistemaDescuento() {
     let monto = parseInt(prompt("Ingrese el monto de compra: "))
     if (monto >= 50000) {
         alert(`El monto con descuento es: ${monto - (monto * 0.2)}`)
-    } else if (monto>= 30000) {
+    } else if (monto >= 30000) {
         alert(`El monto con descuento es: ${monto - (monto * 0.1)}`)
     } else if (monto <= 30000 && monto > 0) {
         alert(`El monto con final es: ${monto}. Sin descuento`)
@@ -39,15 +39,15 @@ function sistemaDescuento() {
 // o “Acceso denegado”
 function accesoEvento() {
     let edadEvento = parseInt(prompt("Ingrese su edad: "));
-    
+
     if (edadEvento >= 18) {
         alert("Acceso permitido");
     } else {
         let permitido = prompt("¿Viene acompañado?: si/no ");
-        
+
         if (permitido !== null) {
             permitido = permitido.toLowerCase();
-            
+
             if (permitido === "si") {
                 alert("Acceso permitido");
             } else {
@@ -127,21 +127,21 @@ function ejercicio5() {
     let nota1 = parseInt(prompt(`Ingresa Nota 1: `));
     let nota2 = parseInt(prompt(`Ingresa Nota 2: `));
     let nota3 = parseInt(prompt(`Ingresa Nota 3: `));
-    let promedio = (nota1 + nota2 + nota3)/3;
+    let promedio = (nota1 + nota2 + nota3) / 3;
     if (promedio > 6.0) {
-        alert(`Promedio: ${promedio}
+        alert(`El estudiante ${estudiante} tiene un promedio de ${promedio}.
             \nAprobado con excelencia`);
     } else if (promedio >= 4.0) {
-        alert(`Promedio: ${promedio}
+        alert(`El estudiante ${estudiante} tiene un promedio de ${promedio}.
             \nAprobado`);
     } else if (promedio < 4.0) {
-        alert(`Promedio: ${promedio}
+        alert(`El estudiante ${estudiante} tiene un promedio de ${promedio}.
             \nReprobado`);
     } else {
-        alert(`Promedio: ${promedio}
+        alert(`El estudiante ${estudiante} tiene un promedio de ${promedio}.
             \nDebe asistir a reforzamiento`);
     }
-} 
+}
 
 // 📌 Requisitos Técnicos
 // Cada ejercicio debe:
