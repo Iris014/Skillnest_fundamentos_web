@@ -124,13 +124,10 @@ function ejercicio4() {
 //  “Debe asistir a reforzamiento”.
 function ejercicio5() {
     let estudiante = prompt("Ingrese nombre del estudiante: ")
-    let nota1 = parseInt(prompt(`Sin puntos o comas
-        \nIngresa Nota 1: `));
-    let nota2 = parseInt(prompt(`Sin puntos o comas
-        \nIngresa Nota 2: `));
-    let nota3 = parseInt(prompt(`Sin puntos o comas
-        \nIngresa Nota 3: `));
-    let promedio = (nota1 + nota2 + nota3)/30;
+    let nota1 = parseInt(prompt(`Ingresa Nota 1: `));
+    let nota2 = parseInt(prompt(`Ingresa Nota 2: `));
+    let nota3 = parseInt(prompt(`Ingresa Nota 3: `));
+    let promedio = (nota1 + nota2 + nota3)/3;
     if (promedio > 6.0) {
         alert(`Promedio: ${promedio}
             \nAprobado con excelencia`);
