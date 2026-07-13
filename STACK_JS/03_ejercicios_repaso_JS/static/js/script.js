@@ -206,17 +206,16 @@ function ejercicio5() {
   let nombreConductor = prompt("Ingrese el nombre del conductor:");
   let velocidad = parseInt(prompt("Ingrese la velocidad registrada (km/h):"));
   let clasificacion = "";
-  if (velocidad <= 40) {
-    clasificacion = "Velocidad baja";
-  } else if (velocidad > 40 && velocidad <= 90) {
-    clasificacion = "Velocidad moderada";
-  } else if (velocidad > 90 && velocidad <= 120) {
-    clasificacion = "Velocidad alta";
-  } else if (velocidad > 120) {
+  let limiteVelocidad = 90;
+  if (limiteVelocidad <= velocidad && velocidad >= 85) {
     clasificacion = "Velocidad excesiva";
     alert("¡Atención! Ha excedido la velocidad máxima permitida.");
+  } else if (velocidadLimite > velocidad && velocidad >= 65) {
+    clasificacion = "Velocidad alta";
+  } else if (velocidad <= 60 && velocidad > 30) {
+    clasificacion = "Velocidad moderada";
   } else {
-    clasificacion = "Velocidad no válida";
+    clasificacion = "Velocidad baja";
   }
   alert(`Nombre del conductor: ${nombreConductor}
     \nVelocidad: ${velocidad} km/h
