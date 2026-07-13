@@ -128,18 +128,20 @@ function ejercicio5() {
     let nota2 = parseInt(prompt(`Ingresa Nota 2: `));
     let nota3 = parseInt(prompt(`Ingresa Nota 3: `));
     let promedio = (nota1 + nota2 + nota3) / 3;
-    if (promedio > 6.0) {
+    if (promedio >= 6.0 && (nota1 < 2.0 || nota2 < 2.0 || nota3 < 2.0)) {
+        alert(`El estudiante ${estudiante} tiene un promedio de ${promedio}.
+            \nDebe asistir a reforzamiento`);
+    } else if (promedio >= 6.0 && promedio <= 7.0) {
         alert(`El estudiante ${estudiante} tiene un promedio de ${promedio}.
             \nAprobado con excelencia`);
-    } else if (promedio >= 4.0) {
+    } else if (promedio == 4.0 && promedio < 6.0) {
         alert(`El estudiante ${estudiante} tiene un promedio de ${promedio}.
             \nAprobado`);
-    } else if (promedio < 4.0) {
+    } else if (promedio < 4.0 && promedio >= 1.0) {
         alert(`El estudiante ${estudiante} tiene un promedio de ${promedio}.
             \nReprobado`);
     } else {
-        alert(`El estudiante ${estudiante} tiene un promedio de ${promedio}.
-            \nDebe asistir a reforzamiento`);
+        alert(`Ingresar valores válidos.`)
     }
 }
 

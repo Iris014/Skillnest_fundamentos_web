@@ -38,9 +38,11 @@ function ejercicio1() {
   } else if (peso > 5 && peso <= 10) {
     envio = "Más de 5 kg y hasta 10 kg";
     valor = "$8000";
-  } else {
+  } else if (peso > 10 && peso < 50) {
     envio = "Más de 10 kg";
     valor = "$15000";
+  } else {
+    alert(`Ingrese valores válidos`)
   }
 
   alert(`Nombre del cliente: ${nombre} 
@@ -155,13 +157,15 @@ function ejercicio3() {
 
 function ejercicio4() {
   let nombre = prompt("Ingrese el nombre del trabajador:");
-  let anosServicio = parseInt(prompt("Ingrese los años de servicio:"));
-  let nivel = "";
+  let añosServicio = parseInt(prompt("Ingrese los años de servicio:"));
   let mensaje = "";
-  if (anosServicio < 1) {
+  let nivel = "";
+  if (años <= 0) {
+    mensaje = "Lo sentimos, no recibirá bonificación, ya que no lleva suficiente tiempo en en la empresa."
+  } else if (añosServicio > 0 && añosServicio <= 2) {
     nivel = "Inicial";
     mensaje = "No recibe bonificación.";
-  } else if (anosServicio >= 1 && anosServicio <= 5) {
+  } else if (añosServicio >= 1 && añosServicio <= 5) {
     nivel = "Intermedio";
     mensaje = "Sí recibe bonificación.";
   } else {
@@ -170,7 +174,7 @@ function ejercicio4() {
   } 
   alert(`Nombre: ${nombre}
     \nNivel de antigüedad: ${nivel}
-    \nMensaje: ${mensaje}`);
+    \n${mensaje}`);
 }
 
 // ---
