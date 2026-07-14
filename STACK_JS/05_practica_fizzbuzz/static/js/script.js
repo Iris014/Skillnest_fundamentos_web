@@ -31,11 +31,11 @@ console.log("Conexión js..")
 function ejecutar() {
   for (let i = 1; i <= 100; i++) {
     if (i % 3 === 0 && i % 5 === 0) { //sin residuo= se dividio exacto. Y no se empezo de 0 porque no debe aparecer al inicio
-      alert("FizzBuzz");
+      alert(`FizzBuzz`);
     } else if (i % 3 === 0) {
-      alert("Fizz");
+      alert(`Fizz`);
     } else if (i % 5 === 0) {
-      alert("Buzz");
+      alert(`Buzz`);
     } else {
       alert(i);
     }
