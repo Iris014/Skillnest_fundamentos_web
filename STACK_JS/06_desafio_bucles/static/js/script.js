@@ -105,7 +105,7 @@ function calcularPuntos() {
 // Tienes 1 notificación nueva.
 // No tienes notificaciones pendientes.​​
 function contarNotificacion() {
-    for (let i = 1; i <= 6; i++) {
+    for (let i = 5; i >= 0; i--) {
     if (i === 1) {
       alert(`Tienes ${i} notificación nueva.`);
     } else if (i >= 2 && i <= 5) {
