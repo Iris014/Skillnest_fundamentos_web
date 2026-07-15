@@ -55,15 +55,15 @@ function descuentoTienda() {
   for (let i = 1; i <= 5; i++) {
     let valorProducto = parseInt(prompt(`Ingrese valor del producto`))
     if (i === 1) {
-      alert(`Producto ${i} - Descuento aplicado: 5%`);
+      alert(`Producto ${i} - Descuento aplicado: ${i *5}%`);
     } else if (i === 2) {
-      alert(`Producto ${i} - Descuento aplicado: 10%`)
+      alert(`Producto ${i} - Descuento aplicado: ${i *5}%`)
     } else if (i === 3) {
-      alert(`Producto ${i} - Descuento aplicado: 15%`)
+      alert(`Producto ${i} - Descuento aplicado: ${i *5}%`)
     } else if (i === 4) {
-      alert(`Producto ${i} - Descuento aplicado: 20%`)
+      alert(`Producto ${i} - Descuento aplicado: ${i *5}%`)
     } else {
-      alert(`Producto ${i} - Descuento aplicado: 25%`)
+      alert(`Producto ${i} - Descuento aplicado: ${i *5}%`)
     }
   }
 }
