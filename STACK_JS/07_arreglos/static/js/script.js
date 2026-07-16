@@ -244,7 +244,38 @@ function ejercicio9() {
 // Índice donde ocurrió la venta mayor.
 // Índice donde ocurrió la venta menor.
 function ejercicio10() {
-    
+    let ventas = [12000, 18000, 5000, 21000, 9000, 15000, 8000];
+    let total = 0;
+    let mayor = ventas[0];
+    let menor = ventas[0];
+    let indiceMayor = 0;
+    let indiceMenor = 0;
+    let ventaMayor = 0;
+    let ventaMenor = 0;
+    for (let i = 0; i < ventas.length; i++) {
+        total += ventas[i];
+        if (ventas[i] > 10000) {
+            ventaMayor++;
+        } else if (ventas[i] < 10000) {
+            ventaMenor++;
+        } 
+        if (ventas[i] > mayor) {
+            mayor = ventas[i];
+            indiceMayor = i;
+        } else if (ventas[i] < menor) {
+            menor = ventas[i];
+            indiceMenor = i;
+        }
+    }
+    let promedio = total / ventas.length;
+    alert(`Total de ventas: $${total}
+        \nPromedio: ${promedio}
+        \nVenta mayor: $${mayor}
+        \nVenta menor: $${menor}
+        \nVentas mayores a $10.000: ${ventaMayor}
+        \nVentas menores o iguales a $10.000: ${ventaMenor}
+        \nMayor indice: ${indiceMayor}
+        \nMenor indice: ${indiceMenor}`);
 }
 
 
