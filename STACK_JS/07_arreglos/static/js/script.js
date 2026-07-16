@@ -77,10 +77,10 @@ function manipularArreglo(listaTareas) {
 // Última edad.
 // Cantidad de elementos.
 function ejercicio1() {
-let edades = [15, 18, 20, 14, 25];
-alert(`Primera edad: ${edades[0]}`);
-alert(`Última edad: ${edades[edades.length - 1]}`);
-alert(`Cantidad de elementos: ${edades.length}`);
+    let edades = [15, 18, 20, 14, 25];
+    alert(`Primera edad: ${edades[0]}`);
+    alert(`Última edad: ${edades[edades.length - 1]}`);
+    alert(`Cantidad de elementos: ${edades.length}`);
 }
 
 // Ejercicio 2
@@ -89,9 +89,9 @@ alert(`Cantidad de elementos: ${edades.length}`);
 // Mostrar todos utilizando un ciclo for.
 function ejercicio2() {
     let nombres2 = ["Sofia", "Dario", "Maria", "Camila", "Mateo"];
-for (let i = 0; i < nombres2.length; i++) {
-    alert(`Nombre en índice ${i}: ${nombres2[i]}`);
-}
+    for (let i = 0; i < nombres2.length; i++) {
+        alert(`Nombres en ciclo ${i}: ${nombres2[i]}`);
+    }
 }
 
 // Ejercicio 3
@@ -104,12 +104,12 @@ for (let i = 0; i < nombres2.length; i++) {
 // Promedio: X
 function ejercicio3() {
     let notas3 = [6.5, 5.0, 4.2, 7.0, 5.8];
-let suma3 = 0;
-for (let i = 0; i < notas3.length; i++) {
-    suma3 += notas3[i];
-}
-let promedio3 = suma3 / notas3.length;
-alert(`Promedio: ${promedio3}`);
+    let suma3 = 0;
+    for (let i = 0; i < notas3.length; i++) {
+        suma3 += notas3[i];
+    }
+    let promedio3 = suma3 / notas3.length;
+    alert(`Promedio: ${promedio3}`);
 }
 
 // Ejercicio 4
@@ -117,6 +117,16 @@ alert(`Promedio: ${promedio3}`);
 
 // [18,20,15,22,19,25,17]
 // Mostrar solamente las temperaturas mayores a 20.
+function ejercicio4() {
+    let temperatura = [18, 20, 15, 22, 19, 25, 17];
+    let mayor20 = [];
+    for (let i = 0; i < temperatura.length; i++) {
+        if (temperatura[i] > 20) {
+            mayor20.push(temperatura[i]);
+        }
+    }
+    alert(`Temperaturas mayores a 20: ${mayor20.join(", ")}`);
+}
 
 // Ejercicio 5
 // Crear un arreglo con diez números.
@@ -125,6 +135,21 @@ alert(`Promedio: ${promedio3}`);
 
 // Cuántos son pares.
 // Cuántos son impares.
+function ejercicio5() {
+    let numeros = [12, 7, 22, 14, 3, 9, 30, 15, 8, 11];
+    let pares = 0;
+    let impares = 0;
+    for (let i = 0; i < numeros.length; i++) {
+        if (numeros[i] % 2 === 0) {
+            pares++;
+        } else {
+            impares++;
+        }
+    }
+    alert(`Pares: ${pares}
+        \nImpares: ${impares}`);
+}
+
 // Ejercicio 6
 // Crear el siguiente arreglo.
 
@@ -134,16 +159,54 @@ alert(`Promedio: ${promedio3}`);
 // Venta mayor.
 // Venta menor.
 // Total vendido.
+function ejercicio6() {
+    let ventas = [5000, 12000, 3000, 4500, 7000];
+    let ventaMayor = ventas[0];
+    let ventaMenor = ventas[0];
+    let totalVenta = 0;
+    for (let i = 0; i < ventas.length; i++) {
+        totalVenta += ventas[i];
+        if (ventas[i] > ventaMayor) {
+            ventaMayor = ventas[i];
+        } else if (ventas[i] < ventaMenor) {
+            ventaMenor = ventas[i];
+        }
+    }
+    alert(`Venta mayor: ${ventaMayor}
+        \nVenta menor: ${ventaMenor}
+        \nTotal vendido: ${totalVenta}`);
+}
+
 // Ejercicio 7
 // Crear el siguiente arreglo.
 
 // ["Ana","Pedro","María","Juan","Camila","Tomás"]
 // Mostrar únicamente los nombres con más de cuatro letras.
+function ejercicio7() {
+    let nombres3 = ["Ana", "Pedro", "María", "Juan", "Camila", "Tomás"];
+    let masLetras = [];
+    for (let i = 0; i < nombres3.length; i++) {
+        if (nombres3[i].length > 4) {
+            masLetras.push(nombres3[i]);
+        }
+    }
+    alert(`Nombres con más de 4 letras: ${masLetras.join(", ")}`);
+}
 
 // Ejercicio 8
 // Crear un arreglo con ocho números.
 
 // Mostrar únicamente los múltiplos de 3.
+function ejercicio8() {
+    let numeros = [4, 9, 12, 17, 21, 25, 30, 31];
+    let multiplos = [];
+    for (let i = 0; i < numeros.length; i++) {
+        if (numeros[i] % 3 === 0) {
+            multiplos.push(numeros[i]);
+        }
+    }
+    alert(`Los múltiplos de 3 son ${multiplos.join(", ")}`);
+}
 
 // Ejercicio 9
 // Crear el siguiente arreglo.
@@ -153,6 +216,21 @@ alert(`Promedio: ${promedio3}`);
 
 // Cantidad de mayores de edad.
 // Cantidad de menores de edad.
+function ejercicio9() {
+    let edades = [15, 16, 17, 18, 17, 16, 19, 20];
+    let mayores = 0;
+    let menores = 0;
+    for (let i = 0; i < edades.length; i++) {
+        if (edades[i] >= 18) {
+            mayores++;
+        } else {
+            menores++;
+        }
+    }
+    alert(`Cantidad de mayores de edad: ${mayores}
+        \nCantidad de menores de edad: ${menores}`);
+}
+
 // Ejercicio 10 (Desafío)
 // let ventas = [12000,18000,5000,21000,9000,15000,8000];
 // Mostrar:
@@ -165,6 +243,11 @@ alert(`Promedio: ${promedio3}`);
 // Cantidad de ventas menores o iguales a $10.000.
 // Índice donde ocurrió la venta mayor.
 // Índice donde ocurrió la venta menor.
+function ejercicio10() {
+    
+}
+
+
 // 🚀 Desafío Final
 // Una empresa registra las ventas de sus vendedores.
 
