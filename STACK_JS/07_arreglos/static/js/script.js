@@ -63,6 +63,69 @@ function manipularArreglo(listaTareas) {
 }
 
 
+// Recorrer un arreglo
+function recorrerArreglo() {
+    let notas = [6.2, 5.8, 4.1, 7.0];
+
+    for (let i = 0; i < notas.length; i++) {
+
+        alert(`Mostrando nota ${i + 1} de ${notas.length}: ${notas[i]}`);
+
+    }
+
+}
+
+// Sumar elementos dentro de un bucle
+function sumarElementos() {
+    let ventas = [10000, 5000, 12000, 8000];
+
+    let total = 0;
+
+    for (let i = 0; i < ventas.length; i++) {
+
+        total += ventas[i]; // += acumula
+
+    }
+
+    alert(`El resultado final es: ${total}`);
+}
+
+// Calcular un prommedio 
+function calcularPromedio() {
+    let notas = [5.8, 6.2, 4.9, 6.5];
+
+    let suma = 0;
+
+    for (let i = 0; i < notas.length; i++) {
+
+        suma += notas[i];
+
+    }
+
+    alert(`La suma acumulada es: ${suma}`)
+
+    let promedio = suma / notas.length;
+
+    alert(`El promedio de las notas: ${notas.join(" - ")} 
+    \nPromedio: ${promedio}`);
+}
+
+// Condiciones dentro de un bucle
+function buscarMayoresEdad() {
+    let edades = [12, 15, 18, 20, 25, 35, 50, 5];
+    let mayores = [];
+
+    for (let i = 0; i < edades.length; i++) {
+
+        // condición para buscar mayores de 18
+        if (edades[i] >= 18) {
+            mayores.push(edades[i]); // Añade la posición que cumple la condición
+        }
+
+    }
+    alert(`De la lista de edades: ${edades.join(" / ")}
+    \nLos mayores son: ${mayores.join(" / ")}`)
+}
 
 
 
@@ -77,10 +140,10 @@ function manipularArreglo(listaTareas) {
 // Última edad.
 // Cantidad de elementos.
 function ejercicio1() {
-    let edades = [15, 18, 20, 14, 25];
-    alert(`Primera edad: ${edades[0]}`);
-    alert(`Última edad: ${edades[edades.length - 1]}`);
-    alert(`Cantidad de elementos: ${edades.length}`);
+    let edades2 = [15, 18, 20, 14, 25];
+    alert(`Primera edad: ${edades2[0]}`);
+    alert(`Última edad: ${edades2[edades2.length - 1]}`);
+    alert(`Cantidad de elementos: ${edades2.length}`);
 }
 
 // Ejercicio 2
@@ -118,11 +181,11 @@ function ejercicio3() {
 // [18,20,15,22,19,25,17]
 // Mostrar solamente las temperaturas mayores a 20.
 function ejercicio4() {
-    let temperatura = [18, 20, 15, 22, 19, 25, 17];
+    let temperatura2 = [18, 20, 15, 22, 19, 25, 17];
     let mayor20 = [];
-    for (let i = 0; i < temperatura.length; i++) {
-        if (temperatura[i] > 20) {
-            mayor20.push(temperatura[i]);
+    for (let i = 0; i < temperatura2.length; i++) {
+        if (temperatura2[i] > 20) {
+            mayor20.push(temperatura2[i]);
         }
     }
     alert(`Temperaturas mayores a 20: ${mayor20.join(", ")}`);
@@ -136,18 +199,18 @@ function ejercicio4() {
 // Cuántos son pares.
 // Cuántos son impares.
 function ejercicio5() {
-    let numeros = [12, 7, 22, 14, 3, 9, 30, 15, 8, 11];
-    let pares = 0;
-    let impares = 0;
-    for (let i = 0; i < numeros.length; i++) {
-        if (numeros[i] % 2 === 0) {
-            pares++;
+    let numeros1 = [12, 7, 22, 14, 3, 9, 30, 15, 8, 11];
+    let pares1 = 0;
+    let impares1 = 0;
+    for (let i = 0; i < numeros1.length; i++) {
+        if (numeros1[i] % 2 === 0) {
+            pares1++;
         } else {
-            impares++;
+            impares1++;
         }
     }
-    alert(`Pares: ${pares}
-        \nImpares: ${impares}`);
+    alert(`Pares: ${pares1}
+        \nImpares: ${impares1}`);
 }
 
 // Ejercicio 6
@@ -160,21 +223,21 @@ function ejercicio5() {
 // Venta menor.
 // Total vendido.
 function ejercicio6() {
-    let ventas = [5000, 12000, 3000, 4500, 7000];
-    let ventaMayor = ventas[0];
-    let ventaMenor = ventas[0];
-    let totalVenta = 0;
-    for (let i = 0; i < ventas.length; i++) {
-        totalVenta += ventas[i];
-        if (ventas[i] > ventaMayor) {
-            ventaMayor = ventas[i];
-        } else if (ventas[i] < ventaMenor) {
-            ventaMenor = ventas[i];
+    let ventas1 = [5000, 12000, 3000, 4500, 7000];
+    let ventaMayor1 = ventas1[0];
+    let ventaMenor1 = ventas1[0];
+    let totalVenta1 = 0;
+    for (let i = 0; i < ventas1.length; i++) {
+        totalVenta1 += ventas1[i];
+        if (ventas1[i] > ventaMayor1) {
+            ventaMayor1 = ventas1[i];
+        } else if (ventas1[i] < ventaMenor1) {
+            ventaMenor1 = ventas1[i];
         }
     }
-    alert(`Venta mayor: ${ventaMayor}
-        \nVenta menor: ${ventaMenor}
-        \nTotal vendido: ${totalVenta}`);
+    alert(`Venta mayor: ${ventaMayor1}
+        \nVenta menor: ${ventaMenor1}
+        \nTotal vendido: ${totalVenta1}`);
 }
 
 // Ejercicio 7
@@ -183,14 +246,14 @@ function ejercicio6() {
 // ["Ana","Pedro","María","Juan","Camila","Tomás"]
 // Mostrar únicamente los nombres con más de cuatro letras.
 function ejercicio7() {
-    let nombres3 = ["Ana", "Pedro", "María", "Juan", "Camila", "Tomás"];
-    let masLetras = [];
-    for (let i = 0; i < nombres3.length; i++) {
-        if (nombres3[i].length > 4) {
-            masLetras.push(nombres3[i]);
+    let nombres7 = ["Ana", "Pedro", "María", "Juan", "Camila", "Tomás"];
+    let masLetras7 = [];
+    for (let i = 0; i < nombres7.length; i++) {
+        if (nombres7[i].length > 4) {
+            masLetras7.push(nombres7[i]);
         }
     }
-    alert(`Nombres con más de 4 letras: ${masLetras.join(", ")}`);
+    alert(`Nombres con más de 4 letras: ${masLetras7.join(", ")}`);
 }
 
 // Ejercicio 8
@@ -198,14 +261,14 @@ function ejercicio7() {
 
 // Mostrar únicamente los múltiplos de 3.
 function ejercicio8() {
-    let numeros = [4, 9, 12, 17, 21, 25, 30, 31];
-    let multiplos = [];
-    for (let i = 0; i < numeros.length; i++) {
-        if (numeros[i] % 3 === 0) {
-            multiplos.push(numeros[i]);
+    let numeros8 = [4, 9, 12, 17, 21, 25, 30, 31];
+    let multiplos8 = [];
+    for (let i = 0; i < numeros8.length; i++) {
+        if (numeros8[i] % 3 === 0) {
+            multiplos8.push(numeros8[i]);
         }
     }
-    alert(`Los múltiplos de 3 son ${multiplos.join(", ")}`);
+    alert(`Los múltiplos de 3 son ${multiplos8.join(", ")}`);
 }
 
 // Ejercicio 9
@@ -217,18 +280,18 @@ function ejercicio8() {
 // Cantidad de mayores de edad.
 // Cantidad de menores de edad.
 function ejercicio9() {
-    let edades = [15, 16, 17, 18, 17, 16, 19, 20];
-    let mayores = 0;
-    let menores = 0;
-    for (let i = 0; i < edades.length; i++) {
-        if (edades[i] >= 18) {
-            mayores++;
+    let edades9 = [15, 16, 17, 18, 17, 16, 19, 20];
+    let mayores9 = 0;
+    let menores9 = 0;
+    for (let i = 0; i < edades9.length; i++) {
+        if (edades9[i] >= 18) {
+            mayores9++;
         } else {
-            menores++;
+            menores9++;
         }
     }
-    alert(`Cantidad de mayores de edad: ${mayores}
-        \nCantidad de menores de edad: ${menores}`);
+    alert(`Cantidad de mayores de edad: ${mayores9}
+        \nCantidad de menores de edad: ${menores9}`);
 }
 
 // Ejercicio 10 (Desafío)
@@ -244,38 +307,38 @@ function ejercicio9() {
 // Índice donde ocurrió la venta mayor.
 // Índice donde ocurrió la venta menor.
 function ejercicio10() {
-    let ventas = [12000, 18000, 5000, 21000, 9000, 15000, 8000];
-    let total = 0;
-    let mayor = ventas[0];
-    let menor = ventas[0];
-    let indiceMayor = 0;
-    let indiceMenor = 0;
-    let ventaMayor = 0;
-    let ventaMenor = 0;
-    for (let i = 0; i < ventas.length; i++) {
-        total += ventas[i];
-        if (ventas[i] > 10000) {
-            ventaMayor++;
-        } else if (ventas[i] < 10000) {
-            ventaMenor++;
-        } 
-        if (ventas[i] > mayor) {
-            mayor = ventas[i];
-            indiceMayor = i;
-        } else if (ventas[i] < menor) {
-            menor = ventas[i];
-            indiceMenor = i;
+    let ventas10 = [12000, 18000, 5000, 21000, 9000, 15000, 8000];
+    let total10 = 0;
+    let mayor10 = ventas10[0];
+    let menor10 = ventas10[0];
+    let indiceMayor10 = 0;
+    let indiceMenor10 = 0;
+    let ventaMayor10 = 0;
+    let ventaMenor10 = 0;
+    for (let i = 0; i < ventas10.length; i++) {
+        total10 += ventas10[i];
+        if (ventas10[i] > 10000) {
+            ventaMayor10++;
+        } else if (ventas10[i] < 10000) {
+            ventaMenor10++;
+        }
+        if (ventas10[i] > mayor10) {
+            mayor10 = ventas10[i];
+            indiceMayor10 = i;
+        } else if (ventas10[i] < menor10) {
+            menor10 = ventas10[i];
+            indiceMenor10 = i;
         }
     }
-    let promedio = total / ventas.length;
-    alert(`Total de ventas: $${total}
-        \nPromedio: ${promedio}
-        \nVenta mayor: $${mayor}
-        \nVenta menor: $${menor}
-        \nVentas mayores a $10.000: ${ventaMayor}
-        \nVentas menores o iguales a $10.000: ${ventaMenor}
-        \nMayor indice: ${indiceMayor}
-        \nMenor indice: ${indiceMenor}`);
+    let promedio10 = total10 / ventas10.length;
+    alert(`Total de ventas: $${total10}
+        \nPromedio: ${promedio10}
+        \nVenta mayor: $${mayor10}
+        \nVenta menor: $${menor10}
+        \nVentas mayores a $10.000: ${ventaMayor10}
+        \nVentas menores o iguales a $10.000: ${ventaMenor10}
+        \nMayor indice: ${indiceMayor10}
+        \nMenor indice: ${indiceMenor10}`);
 }
 
 
