@@ -38,9 +38,16 @@ let auto = {
     }
 };
 auto.encender()
-let auto2 = {
 
-}
+let auto2 = {
+    marca: "Mercedes-Benz",
+    modelo: "Clase A",
+    año: 2024,
+    encender() {
+        console.log("Encendiendo", this.marca, this.modelo);
+    }
+};
+auto2.encender();
 
 
 // Objeto con método casa
@@ -57,5 +64,12 @@ let casa = {
 casa.mostrarInformacion()
 
 let casa2 = {
-    
-}
+    direccion: "Av. Providencia 1308, Providencia",
+    habitaciones: 4,
+    mostrarInformacion() {
+        console.log( 
+             this.direccion
+         );
+    }
+};
+casa2.mostrarInformacion();
