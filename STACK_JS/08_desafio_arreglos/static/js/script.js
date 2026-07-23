@@ -6,10 +6,10 @@ console.log("Conexion con JS..")
 //  una edad específica.
 function filtrarJuegos() {
     let videojuegos = [
-        { nombre: "Minecraft", edadRecomendada: 7 },
-        { nombre: "FIFA 23", edadRecomendada: 3 },
-        { nombre: "Call of Duty", edadRecomendada: 18 },
-        { nombre: "Fortnite", edadRecomendada: 12 }
+        { nombre: " Minecraft", edadRecomendada: 7 },
+        { nombre: " FIFA 23", edadRecomendada: 3 },
+        { nombre: " Call of Duty", edadRecomendada: 18 },
+        { nombre: " Fortnite", edadRecomendada: 12 }
     ];
     let edadMinima = 12;
     let recomendados = [];
@@ -18,9 +18,8 @@ function filtrarJuegos() {
             recomendados.push(videojuegos[i].nombre);
         }
     }
-    alert(`Juegos recomendados: ${recomendados.join(", ")}`);
+    alert("Juegos recomendados:" + recomendados);
 }
-
 // Explicación
 
 // 🧒 Se define un arreglo de objetos, donde cada objeto representa un videojuego con su respectiva edad recomendada.
@@ -50,7 +49,7 @@ function contarCancion() {
             contador++;
         }
     }
-    alert(`La canción ${cancionBuscada} se reprodujo ${contador} veces.`);
+    alert("La canción " + cancionBuscada + " se reprodujo" + contador + " veces.");
 }
 
 // Explicación
@@ -69,13 +68,13 @@ function contarCancion() {
 function organizarTorneo() {
     let jugadores = [
         "Luis",
-        "Andrea",
-        "Carlos",
-        "Sofía",
-        "Pedro",
-        "Martina",
-        "Javier",
-        "Valentina",
+        " Andrea",
+        " Carlos",
+        " Sofía",
+        " Pedro",
+        " Martina",
+        " Javier",
+        " Valentina",
     ];
     let tamanoGrupo = 3;
     let grupos = [];
@@ -87,9 +86,8 @@ function organizarTorneo() {
             grupoActual = [];
         }
     }
-    alert(`Grupos formados: ${JSON.stringify(grupos)}`);
+    alert("Grupos formados: " + grupos);
 }
-
 // Explicación
 
 // 👥 Se define un arreglo jugadores con los participantes del torneo.
@@ -99,11 +97,9 @@ function organizarTorneo() {
 // Salida esperada:
 
 // [["Luis", "Andrea", "Carlos"], ["Sofía", "Pedro", "Martina"], ["Javier", "Valentina"]]
-
 // 🎟️ Simulador de una lista de espera en un cine
-// En un cine, las personas se registran para comprar boletos, 
-// pero solo pueden atender a cierta cantidad a la vez. Muestra los primeros en ser atendidos 
-// y actualiza la lista de espera.
+// En un cine, las personas se registran para comprar boletos, pero solo pueden atender a cierta cantidad a la vez. Muestra los primeros en ser atendidos y actualiza la lista de espera.
+
 function simularLista() {
     let filaClientes = [
         "María",
@@ -119,8 +115,8 @@ function simularLista() {
         atendidos.push(filaClientes[i]);
     }
     filaClientes = filaClientes.slice(cantidadAtendidos);
-    alert(`Clientes atendidos: ${atendidos.join(", ")}`);
-    alert(`Clientes en espera: ${filaClientes.join(", ")}`);
+    alert("Clientes atendidos: " + atendidos);
+    alert("Clientes en espera: " + filaClientes);
 }
 
 // Explicación
