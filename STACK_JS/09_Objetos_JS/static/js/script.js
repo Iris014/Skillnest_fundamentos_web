@@ -45,7 +45,7 @@ let auto2 = {
     año: 2024,
     encender: function () {
         console.log("Encendiendo", this.marca, this.modelo);
-        alert(auto2.encender());
+        alert(`Encendiendo ${this.marca} ${this.modelo}`);
     }
 };
 
@@ -66,10 +66,13 @@ casa.mostrarInformacion()
 let casa2 = {
     direccion: "Av. Providencia 1308, Providencia",
     habitaciones: 4,
+    baños: 1,
     mostrarInformacion: function () {
         console.log(
             this.direccion
         );
-        alert(casa2.mostrarInformacion());
+        alert(
+            `${this.direccion}, ${this.habitaciones} habitaciones, ${this.baños} baños`
+        );
     }
 };
