@@ -45,9 +45,9 @@ let auto2 = {
     año: 2024,
     encender: function () {
         console.log("Encendiendo", this.marca, this.modelo);
+        alert(auto2.encender());
     }
 };
-auto2.encender();
 
 
 // Objeto con método casa
@@ -70,6 +70,6 @@ let casa2 = {
         console.log(
             this.direccion
         );
+        alert(casa2.mostrarInformacion());
     }
 };
-casa2.mostrarInformacion();
