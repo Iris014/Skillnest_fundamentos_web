@@ -18,7 +18,7 @@ function filtrarJuegos() {
             recomendados.push(videojuegos[i].nombre);
         }
     }
-    alert("Juegos recomendados: ", recomendados);
+    alert(`Juegos recomendados: ${recomendados.join(", ")}`);
 }
 // Explicación
 
@@ -49,7 +49,7 @@ function contarCancion() {
             contador++;
         }
     }
-    alert("La canción", cancionBuscada, "se reprodujo", contador, "veces.");
+    alert(`La canción ${cancionBuscada} se reprodujo ${contador} veces.`);
 }
 
 // Explicación
