@@ -36,9 +36,12 @@ let auto = {
             this.modelo
         );
     }
-    
 };
 auto.encender()
+let auto2 = {
+
+}
+
 
 // Objeto con método casa
 let casa = {
@@ -52,3 +55,7 @@ let casa = {
     }
 };
 casa.mostrarInformacion()
+
+let casa2 = {
+    
+}
