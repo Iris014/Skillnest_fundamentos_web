@@ -72,7 +72,9 @@ let casa2 = {
             this.direccion
         );
         alert(
-            `${this.direccion}, ${this.habitaciones} habitaciones, ${this.baños} baños`
+            `${this.direccion}
+            \n${this.habitaciones} habitaciones
+            \n${this.baños} baños`
         );
     }
 };
