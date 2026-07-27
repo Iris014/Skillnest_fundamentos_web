@@ -58,8 +58,8 @@ function pizzaOven(corteza, salsa, quesos, ingredientes) {
             Queso ${LanzadaAMano.quesos.join(" - ")}
             Ingredientes: ${LanzadaAMano.salsas.join(" - ")}`);
 
-    let americana = pizzaOven("tradicional", "tradicional", ["mozzarella"],
-        ["un arreglo con los ingredientes adicionales"]);
+    let americana = pizzaOven("tradicional", "tomate americana", ["mozzarella"],
+        ["Pepperoni", "salchicha italiana", "jamón"]);
         alert(`Ingredientes de la pizza oven:
             Corteza: ${americana.corteza}
             Salsa ${americana.salsa}
@@ -67,7 +67,7 @@ function pizzaOven(corteza, salsa, quesos, ingredientes) {
             Ingredientes: ${americana.salsas.join(" - ")}`);
 
     let fullDeQueso = pizzaOven("tradicional", "tradicional", ["mozzarella"],
-        ["un arreglo con los ingredientes adicionales"]);
+        ["ajo", "oregano seco"]);
         alert(`Ingredientes de la pizza oven:
             Corteza: ${fullDeQueso.corteza}
             Salsa ${fullDeQueso.salsa}
