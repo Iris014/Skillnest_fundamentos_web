@@ -1,20 +1,19 @@
-console.log("Conexión con JS")
-// Ejemplo función simple (sin parámetros)}
+console.log("Conexión con JS");
+
+// Ejemplo función simple (sin parámetros)
 function saludar(/* parámetros */) {
     alert("¡Hola, bienvenido!");
 }
 
-//  🎚️ Funciones con parámetros 
+// 🎚️ Funciones con parámetros 
 // El parámetro recibe un valor para trabajar en la función.
-// El parámetro recibe el tipo de dato al momento de tomar valor.
-// saludar(); // Ejecución de una función
-
 function saludarParam(nombre) { // parámetro nombre
+    // Si no se le pasa nombre al hacer clic, pide uno por defecto
+    if (!nombre) {
+        nombre = prompt("Ingresa tu nombre:");
+    }
     alert("¡Hola, " + nombre + "!");
 }
-// saludarParam("Luis"); // Ejecución de la función con parámetros. ("argumento")
-// saludarParam("Ana");
-// saludarParam("Iris");
 
 // 🎯 Funciones con return
 function encontrarMayor() {
@@ -25,12 +24,11 @@ function encontrarMayor() {
             return b;
         }
     }
-    // máximo guadará el valor de retorno!.
+    // máximo guardará el valor de retorno!
     let numero1 = 10;
     let numero2 = 7;
     let maximo = encontrarMaximo(numero1, numero2);
-    alert(`El número mayor entre ${numero1} y ${numero2},
-el mayor es: ${maximo}`);
+    alert(`El número mayor entre ${numero1} y ${numero2},\nel mayor es: ${maximo}`);
 }
 
 // Tarea
@@ -51,5 +49,41 @@ Devolver el valor final y mostrar con un alert.
 //     }
 
 function operaciones(a, b, c) {
-    return a + b - c
+    return a + b - c;
+}
+
+
+/* 
+Crear una función que reciba un parámetro a través de un bucle
+contar hasta esto:
+Ej: Se recibe el número 5 y muestra: 1 - 2 - 3 - 4 - 5
+Añadir una condición para que el valor ingresado no sea superior a 100.
+*/
+
+// function mostrarConteo() {
+//     // Creación de variables
+//     let num1 = parseInt(prompt("Ingrese primer número: "));
+//     let num1 = parseInt(prompt("Ingrese segundo número: "));
+//     let num1 = parseInt(prompt("Ingrese tercer número: "));
+//     // Mostramos resultados
+//     let resultado = operaciones(num1, num2, num3);
+//     alert(`La operación de ${num1} + ${num2} - ${num3} = ${resultado} `)
+// }
+function mostrarConteo() {
+    // Creación de variables
+    let parametro = parseInt(prompt(`Ingrese el límite del contador`));
+    if (parametro <= 100) {
+    // Mostramos resultados
+    resultado = contadorNumeros(parametro);
+    alert(resultado.join(" - "))
+    } else {
+        alert(`Ingrese un valor inferior a 100`)
+    }
+}
+function contadorNumeros(a) {
+    let numeros = [];
+    for(let i = 1; i <= a; i++){
+        numeros.push(i)
+    }
+    return numeros;
 }
