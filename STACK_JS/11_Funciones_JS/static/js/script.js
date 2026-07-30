@@ -1,19 +1,27 @@
-console.log("Conexión con JS");
-
-// Ejemplo función simple (sin parámetros)
+console.log("Conexión con JS")
+// Ejemplo función simple (sin parámetros)}
 function saludar(/* parámetros */) {
     alert("¡Hola, bienvenido!");
 }
 
-// 🎚️ Funciones con parámetros 
+
+
+//  🎚️ Funciones con parámetros
 // El parámetro recibe un valor para trabajar en la función.
+// El parámetro recibe el tipo de dato al momento de tomar valor.
+// saludar(); // Ejecución de una función
+
+
+
 function saludarParam(nombre) { // parámetro nombre
-    // Si no se le pasa nombre al hacer clic, pide uno por defecto
-    if (!nombre) {
-        nombre = prompt("Ingresa tu nombre:");
-    }
     alert("¡Hola, " + nombre + "!");
 }
+
+// saludarParam("Luis"); // Ejecución de la función con parámetros. ("argumento")
+// saludarParam("Ana");
+// saludarParam("Iris");
+
+
 
 // 🎯 Funciones con return
 function encontrarMayor() {
@@ -24,11 +32,12 @@ function encontrarMayor() {
             return b;
         }
     }
-    // máximo guardará el valor de retorno!
+    // máximo guadará el valor de retorno!.
     let numero1 = 10;
     let numero2 = 7;
     let maximo = encontrarMaximo(numero1, numero2);
-    alert(`El número mayor entre ${numero1} y ${numero2},\nel mayor es: ${maximo}`);
+    alert(`El número mayor entre ${numero1} y ${numero2},
+el mayor es: ${maximo}`);
 }
 
 // Tarea
