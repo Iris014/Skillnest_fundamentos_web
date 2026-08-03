@@ -34,3 +34,9 @@ button:hover {
     height: 50px;
     border: solid 2px blue;
 }
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
