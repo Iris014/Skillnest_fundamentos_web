@@ -44,3 +44,15 @@ img {
 img:hover {
     opacity: 0.7;
 }
+
+/* 3 botones + desafío */
+.botones {
+    background-color: gainsboro;
+    color: black;
+    font-family: Arial, sans-serif;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: 2px solid gray;
+    border-radius: 12px;
+    cursor: pointer;
+}
