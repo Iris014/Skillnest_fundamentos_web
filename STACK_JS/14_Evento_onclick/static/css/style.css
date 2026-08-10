@@ -6,8 +6,128 @@
 
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
     background-color: #F1F2F6;
-    padding: 50px;
 }
 
+.barra-nav {
+    background-color: #A29CFE;
+    color: #ffff;
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.logo {
+    color: #ffff;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.barra-busqueda {
+    background-color: #ffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    width: 500px;
+    text-align: left;
+}
+.iniciar-sesion {
+    background-color: #6C5CE8;
+    color: white;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-left: 75px;
+    width: 60%;
+}
+
+.titulo {
+    font-size: 1.8rem;    /* Hace el título grande y llamativo */
+    font-weight: 700;
+}
+
+.tarjeta-blog {
+    background-color: #ffff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.info {
+    font-size: 15px;
+}
+.intro {
+    font-size: 14px;
+}
+.like {
+    color: #ffff;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #FF7777;
+    padding: 9px;
+    width: 20%;
+    border: none;
+    cursor: pointer;
+}
+
+strong {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.contenedor-lateral {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+.tarjeta-bienvenida {
+    background-color: #ffff;
+    padding: 30px;
+    border-radius: 10px; 
+    height: 180px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;    
+}
+.titular {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+.bienvenido {
+    font-size: 15px;
+    text-align: center;
+}
+.ver-perfil {
+    color: #ffff;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #00D1C8;
+    padding: 9px;
+    margin-top: 5px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

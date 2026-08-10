@@ -4,17 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo this</title>
+    <title>Evento onclick</title>
+    <meta name="author" content="Iris Ccallomamani">
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body>
-    <header class="encabezado">
-        <nav class="barra-nav">
-            <a href="#" class="nav"></a>
-            <a href="#" class="nav"></a>
-        </nav>
+    <header class="barra-nav">
+            <a href="#" class="logo">Social Blog</a>
+            <input type="text" class="barra-busqueda" placeholder="Buscar publicaciones...">
+            <button class="iniciar-sesion">Iniciar sesión</button>
     </header>
+    <main class="main">
+        <div class="contenedor-principal">
+            <div class="tarjeta-blog">
+                <h1 class="titulo">Fundamentos de JavaScript</h1>
+                    <p class="info">
+                        <strong>Publicado por:</strong> Carlos Pérez
+                    </p>
+                    <p class="info">
+                        <strong>Fecha:</strong> 02/03/2025
+                    </p>
+                    <p class="intro">
+                        JavaScript es un lenguaje de programación que se utiliza en el desarrollo web.
+                        Aprende los conceptos básicos para comenzar a programar.
+                    </p>
+                        <button class="like">12 Me gusta</button>
+            </div>
+            <div class="tarjeta-blog">
+                <h1 class="titulo">Aprende a diseñar con CSS</h1>
+                    <p class="info">
+                        <strong>Publicado por:</strong> Ana Gómez
+                    </p>
+                    <p class="info">
+                        <strong>Fecha:</strong> 01/03/2025
+                    </p>
+                    <p class="intro">
+                        El diseño web es una parte fundamental en el desarrollo de aplicaciones web.
+                        Conoce las propiedades de CSS para crear interfaces atractivas.
+                    </p>
+                        <button class="like">30 Me gusta</button>
+            </div>
+        </div>
+        <div class="contenedor-lateral">
+            <div class="tarjeta-bienvenida">
+                <h1 class="titular">¡Bienvenido!</h1>
+                <p class="bienvenido">
+                    Explora nuevas publicaciones y conecta con otros usuarios.
+                </p>
+                <button id="boton-perfil" class="ver-perfil">Ver perfil</button>
+            </div>
+        </div>
+    </main>
 
     <script src="static/js/script.js" defer></script>
 </body>
