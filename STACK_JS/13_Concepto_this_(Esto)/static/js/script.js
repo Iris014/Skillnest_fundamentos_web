@@ -1,11 +1,24 @@
 // Seleccionamos el botón por su id
 let boton = document.getElementById("cambiarTexto");
+let textoBoton = boton.textContent;
+// Guardando una referencia!
 
 // Agregamos un evento 'click' al botón
 boton.addEventListener("click", function () {
+    alert(textoBoton);
     // Cambia el texto del botón usando `this`
     this.innerText = "¡Texto cambiado!";
+    // innerText: Texto de la etiqueta
+    if (textoBoton === "Haz clic en mí") {
+        boton.innerText === "¡Texto cambiado!";
+        alert(boton.innerText);
+    } else if (textoBoton === "¡Texto cambiado!") {
+        boton.innerText === "Haz clic en mí";
+    }
 });
+
+
+
 
 // Seleccionamos todas las imágenes con la clase 'imagenEliminar'
 let imagenes = document.querySelectorAll(".imagenEliminar");
@@ -17,6 +30,9 @@ imagenes.forEach(function (imagen) {
         this.remove();
     });
 });
+
+
+
 
 let boton1 = document.querySelector(".boton1");
 boton1.addEventListener("click", function () {

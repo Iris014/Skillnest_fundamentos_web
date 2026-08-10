@@ -32,6 +32,9 @@ button:hover {
     justify-content: center;
     gap: 50px;
     margin-top: 20px;
+    /* body */
+    background-color: #ffe4e1;
+    text-align: center;
 }
 
 img {
@@ -46,6 +49,11 @@ img:hover {
 }
 
 /* 3 botones + desafío */
+.ejercicios-botones {
+    background-color: lightsteelblue;
+    margin: 25px;
+    padding: 25px;
+}
 .botones {
     background-color: gainsboro;
     color: black;
