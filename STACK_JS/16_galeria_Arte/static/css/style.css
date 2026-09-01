@@ -14,15 +14,16 @@ header{
     background-color: #4A3F35;
     box-shadow: 0 -1px 3px 0px #EAEBEE;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 5px 20px;
+    flex-direction: row;
+    padding: 0px 159px;
     box-shadow: 0 -1px 3px 0px #EAEBEE;
 }
 
 .titulo{
     font-size: 1.5rem;
-    font-weight: 700; /* Grosor de letra */
+    font-weight: 700;
 }
 
 h1{
@@ -37,7 +38,7 @@ h1{
     height: 35px;
     padding: 5px 20px;
     border: none;
-    border-radius: 12px;
+    border-radius: 19px;
     color: #777573;
 }
 
@@ -50,12 +51,13 @@ h1{
 
 .iniciar_sesion{
     color: #4B4036;
+    font-weight: 600;
     background-color: #D9C7B8;
-    padding: 9px 16px;
+    padding: 12px 21px;
     font-size: 1rem;
     font-weight: 600;
-    cursor: pointer; /* Añade una mano cuando mouse  */
-    border-radius: 6px;
+    cursor: pointer;
+    border-radius: 19px;
     border: none;
 }
 
@@ -91,5 +93,6 @@ h1{
 }
 
 .info{
-    font-size: 1.4rem;
+    font-size: 0.8rem;
+    text-align: center;
 }
