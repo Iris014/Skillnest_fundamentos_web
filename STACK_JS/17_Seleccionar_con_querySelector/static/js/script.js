@@ -30,12 +30,18 @@ if (boton !== null) {
 // Tarea:
 /* Crear un botón y aplicar condición al igual que ejemplo...
 - Debe cambiar su texto al momento de hacerle click 
-- Debeb activarse un hover js cambiando el color de fondo
+- Debe activarse un hover js cambiando el color de fondo
 */
 
 let botonCondicion = document.querySelector("#botonClic");
 botonCondicion.addEventListener("click", function () {
-    if (this.innerText === "----") {
-        this.innerText = "Texto";
+    if (botonCondicion.textContent === "----") {
+        botonCondicion.textContent = "Texto";
+        botonCondicion.style.backgroundColor = "cyan";
+        botonCondicion.style.color = "teal";
+    } else {
+        botonCondicion.textContent = "----";
+        botonCondicion.style.backgroundColor = "lightgoldenrod";
+        botonCondicion.style.color = "#FFAA00";
     }
 });
