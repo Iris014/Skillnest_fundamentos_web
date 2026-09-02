@@ -1,10 +1,11 @@
 console.log("Conexión con js");
 
-const botonesLike = document.querySelectorAll(".seccion-like");
-botonesLike.forEach(function(boton) {
+const botonLike1 = document.querySelector("boton1");
+botonLike1.addEventListener("click", function () {
     boton.onclick = function() {
-        let cantidadLikes = parseInt(this.querySelector(".info-likes").innerText);
+        let cantidadLikes = parseInt(this.querySelector("boton1").innerText);
         cantidadLikes = cantidadLikes + 1;
-        this.querySelector(".info-likes").innerText = cantidadLikes + " like(s)";
+        this.querySelector("boton1").innerText = cantidadLikes + " like(s)";
     };
 });
+
