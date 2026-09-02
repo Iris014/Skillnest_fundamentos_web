@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #ECF0F1;
+    background-color: #FFFFFF;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -16,9 +16,134 @@ body {
     align-items: center;
     color: #ffff;
     width: 100%;
-    padding: 10px 70px;
+    padding: 18px 70px;
 }
 
 .social-like {
-    font-size: 0.8rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.contenedor-principal {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 40px;
+    margin: 19px 50px;
+}
+
+.contenedor-perfil {
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.tarjeta-perfil {
+    position: relative;
+    top: 47px;
+    background-color: #ffff;
+    border: solid 2px #6F6F6F;
+    border-radius: 11px;
+    width: 190px;
+    padding: 22px 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.usuario {
+    font-size: 19px;
+    font-weight: 700;
+}
+.ver-perfil {
+    background-color: #289FBF;
+    color: #ffff;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    border: none;
+    padding: 4px 17px;
+    cursor: pointer;
+}
+
+.foto {
+    height: 110px;
+    position: relative;
+    border: none;
+    border-radius: 50%;
+}
+
+.contenedor-comunidad {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.ultimo {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.tarjetas-comunidad {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.tarjeta {
+    background-color: #F5F5F5;
+    border: solid 2px #6F6F6F;
+    border-radius: 9px;
+    padding: 20px 20px;
+    width: 710px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.superior-tarjeta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.usuario-publicacion {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.seccion-like {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.info-likes {
+    font-size: 16px;
+}
+.like {
+    background-color: #FFD16D;
+    color: #000000;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 18px;
+    cursor: pointer;
+}
+
+.inferior-tarjeta {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.enlace {
+    font-size: 15px;
 }
