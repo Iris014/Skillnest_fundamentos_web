@@ -110,6 +110,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    flex: 2;
 }
 
 .usuario-publicacion {
@@ -144,6 +145,9 @@ body {
     font-size: 15px;
 }
 
+.info-publicacion {
+    font-size: 16 px
+}
 .enlace {
     font-size: 15px;
 }
