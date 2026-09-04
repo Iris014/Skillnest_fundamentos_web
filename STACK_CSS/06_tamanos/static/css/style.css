@@ -103,7 +103,7 @@ div {
 .banner {
     height: 330px;
     width: 100%;
-    background: red url("/STACK_CSS/07_tamanos/static/images/banner.png") no-repeat center center; /* Horizontal center, vertical center*/
+    background: url("../images/banner.png") no-repeat center center; /* Horizontal center, vertical center*/
     background-size: 113%;
 }
 
