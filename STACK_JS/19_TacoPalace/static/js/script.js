@@ -16,13 +16,14 @@ imagen.onclick = function() {
                 <button class="login">Login</button>
             </div>
 */
-
 let correo = document.getElementById("barra-busqueda");
 
 let login = document.querySelector(".login");
+
 login.onclick = function() {
-    alert(`Bienvenido/a ${correo.innerText}`)
+    alert(`Bienvenido/a ${correo.value}`);
 }
+
 
 const boton1 = document.getElementById("boton1");
 boton1.addEventListener("click", function () {
@@ -46,4 +47,12 @@ boton3.addEventListener("click", function () {
     let cantidadLikes3 = parseInt(infoLikes3.innerText);
     cantidadLikes3 = cantidadLikes3 + 1;
     infoLikes3.innerText = cantidadLikes3 + " like(s)";
+});
+
+const boton4 = document.getElementById("boton4");
+boton4.addEventListener("click", function () {
+    let infoLikes4 = this.previousElementSibling;
+    let cantidadLikes4 = parseInt(infoLikes4.innerText);
+    cantidadLikes4 = cantidadLikes4 + 1;
+    infoLikes4.innerText = cantidadLikes4 + " like(s)";
 });
