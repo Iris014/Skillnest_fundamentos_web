@@ -54,9 +54,10 @@ body {
     border-radius: 19px;
 }
 .login {
-    color: #000000;
+    color: #FFFFFF;
     background-color: #FF6500;
     border-radius: 19px;
+    padding: 5px 10px;
 }
 
 .compras {
@@ -167,30 +168,30 @@ body {
 
 .c-recomendados{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     gap: 11px;
     flex: 1;
 }
 
 .recomendados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.3rem;
     font-weight: 700;
 }
 
 .t{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     gap: 9px;
 }
 
 .info-orden{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-direction: row;
 }
 

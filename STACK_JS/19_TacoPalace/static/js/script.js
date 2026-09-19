@@ -10,41 +10,24 @@ imagen.onclick = function() {
     } 
 };
 
-/*
-            <div class="busqueda">
-                <input type="text" id="barra-busqueda" name="email" placeholder="Email">
-                <button class="login">Login</button>
-            </div>
-*/
+
 let correo = document.getElementById("barra-busqueda");
-
 let login = document.querySelector(".login");
-
 login.onclick = function() {
     alert(`Bienvenido/a ${correo.value}`);
 }
 
 
-const Likes = document.querySelectorAll(".info-likes");
-
-const boton1 = document.getElementById("boton1");
-boton1.addEventListener("click", function () {
-    let infoLikes1 = Likes[0];
-    let cantidadLikes1 = parseInt(infoLikes1.innerText);
-    cantidadLikes1 = cantidadLikes1 + 1;
-    infoLikes1.innerText = cantidadLikes1 + " like(s)";
-});
-const boton2 = document.getElementById("boton2");
-boton2.addEventListener("click", function () {
-    let infoLikes2 = Likes[1];
-    let cantidadLikes2 = parseInt(infoLikes2.innerText);
-    cantidadLikes2 = cantidadLikes2 + 1;
-    infoLikes2.innerText = cantidadLikes2 + " like(s)";
-});
-const boton3 = document.getElementById("boton3");
-boton3.addEventListener("click", function () {
-    let infoLikes3 = Likes[2];
-    let cantidadLikes3 = parseInt(infoLikes3.innerText);
-    cantidadLikes3 = cantidadLikes3 + 1;
-    infoLikes3.innerText = cantidadLikes3 + " like(s)";
-});
+let compras = document.querySelector(".n-compra");
+let mas1 = document.getElementById("boton1");
+mas1.onclick = function () {
+    let vlrActual = parseInt(compras.innerText);
+    let vlrUsuario = vlrActual + 1;
+    compras.innerText = vlrUsuario;
+};
+let mas2 = document.getElementById("boton2");
+mas2.onclick = function () {
+    let vlrActual = parseInt(compras.innerText);
+    let vlrUsuario = vlrActual + 1;
+    compras.innerText = vlrUsuario;
+};
